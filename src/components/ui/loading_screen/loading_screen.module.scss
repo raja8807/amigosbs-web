@@ -1,5 +1,5 @@
 .LoadingScreen {
-  background-color: #f4f4f4;
+  background-color: #fbfbfb;
   position: fixed;
   width: 100dvw;
   height: 100dvh;
@@ -7,6 +7,4 @@
   left: 0;
   @include flexCenter;
   z-index: 10000;
-
-
 }

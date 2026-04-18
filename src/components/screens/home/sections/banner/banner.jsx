@@ -36,23 +36,23 @@ const BannerSection = () => {
               <div className={styles.left}>
                 <div className={styles.detail}>
                   <div className={`${styles.bar} ${styles.barTop}`}
-                  data-aos="fade-left"
+                  data-aos-delay="1500" data-aos="fade-left"
                   >
                     <div />
                   </div>
                   <p 
-                  data-aos="fade-in"
+                  data-aos-delay="1500" data-aos="fade-in"
                   
                   >Plan your trip now</p>
                   <div className={`${styles.bar} ${styles.barBot}`}
-                  data-aos="fade-right"
+                  data-aos-delay="1500" data-aos="fade-right"
                   
                   >
                     <div />
                   </div>
                 </div>
                 <h1 className={FONTS.font2}
-                  data-aos="fade-right"
+                  data-aos-delay="1500" data-aos="fade-right"
                 
                 >
                   Save <span>big</span> with
@@ -65,7 +65,7 @@ const BannerSection = () => {
               </div>
 
               <div className={styles.right}
-                  data-aos="fade-left"
+                  data-aos-delay="1500" data-aos="fade-left"
               
               >
                 <p>
@@ -93,8 +93,8 @@ const BannerSection = () => {
                 <div className={styles.cont}>
                   <p
                     className={FONTS.font2}
-                    data-aos="fade-up"
-                    data-aos-delay={1500 + 500}
+                    data-aos-delay="1500" data-aos="fade-up"
+                    data-aos-delay="1500" data-aos-delay={1500 + 500}
                   >
                     Travel Smarter, Travel Better
                   </p>
@@ -103,29 +103,29 @@ const BannerSection = () => {
                     <h1>
                       <span
                         className={styles.w1}
-                        data-aos="fade-up"
-                        data-aos-delay={1500 + 0}
+                        data-aos-delay="1500" data-aos="fade-up"
+                        data-aos-delay="1500" data-aos-delay={1500 + 0}
                       >
                         Find
                       </span>
                       <span
                         className={styles.w2}
-                        data-aos="fade-up"
-                        data-aos-delay={1500 + 100}
+                        data-aos-delay="1500" data-aos="fade-up"
+                        data-aos-delay="1500" data-aos-delay={1500 + 100}
                       >
                         Your
                       </span>
                       <span
                         className={styles.w3}
-                        data-aos="fade-up"
-                        data-aos-delay={1500 + 200}
+                        data-aos-delay="1500" data-aos="fade-up"
+                        data-aos-delay="1500" data-aos-delay={1500 + 200}
                       >
                         Next
                       </span>
                       <span
                         className={styles.w4}
-                        data-aos="fade-up"
-                        data-aos-delay={1500 + 300}
+                        data-aos-delay="1500" data-aos="fade-up"
+                        data-aos-delay="1500" data-aos-delay={1500 + 300}
                       >
                         Stay
                       </span>
