@@ -38,9 +38,12 @@ const PlanSection = () => {
         />
 
         <div className={styles.wrap}>
-          {cards.map((card) => {
+          {cards.map((card,idx) => {
             return (
-              <div className={styles.planCard} key={card.title}>
+              <div className={styles.planCard} key={card.title}
+              data-aos="fade-left"
+              data-aos-delay={idx * 180}
+              >
                 {!card.noLine && (
                   <div className={styles.line}>
                     <Image src="/assets/border.png" alt="line" />

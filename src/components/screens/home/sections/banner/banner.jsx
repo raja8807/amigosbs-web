@@ -35,15 +35,26 @@ const BannerSection = () => {
             <div className={styles.wrap}>
               <div className={styles.left}>
                 <div className={styles.detail}>
-                  <div className={`${styles.bar} ${styles.barTop}`}>
+                  <div className={`${styles.bar} ${styles.barTop}`}
+                  data-aos="fade-left"
+                  >
                     <div />
                   </div>
-                  <p>Plan your trip now</p>
-                  <div className={`${styles.bar} ${styles.barBot}`}>
+                  <p 
+                  data-aos="fade-in"
+                  
+                  >Plan your trip now</p>
+                  <div className={`${styles.bar} ${styles.barBot}`}
+                  data-aos="fade-right"
+                  
+                  >
                     <div />
                   </div>
                 </div>
-                <h1 className={FONTS.font2}>
+                <h1 className={FONTS.font2}
+                  data-aos="fade-right"
+                
+                >
                   Save <span>big</span> with
                   <br />
                   our car rental
@@ -53,7 +64,10 @@ const BannerSection = () => {
                 </h1>
               </div>
 
-              <div className={styles.right}>
+              <div className={styles.right}
+                  data-aos="fade-left"
+              
+              >
                 <p>
                   Amigos Business Solutions is a company headquartered in
                   Chennai- India started by a group of friends which in Spanish
