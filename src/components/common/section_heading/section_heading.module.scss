@@ -1,0 +1,29 @@
+.SectionHeading {
+  text-align: center;
+  margin-bottom: 80px;
+
+  p {
+    font-size: 20px;
+    color: $color_1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    // font-weight: 500;
+  }
+
+  h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
+
+  @include respond-below(md) {
+    p {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}

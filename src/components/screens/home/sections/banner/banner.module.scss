@@ -1,0 +1,133 @@
+.BannerSection {
+  .Banner {
+    position: relative;
+    height: 100vh;
+
+    .bgWrap {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // animation: zoomBg 20s infinite alternate;
+    }
+  }
+
+  .cont {
+    position: relative;
+    z-index: 10;
+    // background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    height: 100%;
+
+    .wrap {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      max-width: 1180px;
+      margin: auto;
+      padding-bottom: 30px;
+      // background-color: red;
+      .left {
+        * {
+          color: white;
+        }
+
+        .detail {
+          width: fit-content;
+
+          p {
+            font-weight: 600;
+            font-size: 17px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+          }
+          .bar {
+            > div {
+              height: 2px;
+              background-color: $color_1;
+              width: 50%;
+            }
+
+            &.barTop {
+              > div {
+                margin: 0 0 0 auto;
+              }
+            }
+          }
+        }
+
+        h1 {
+          text-transform: uppercase;
+          font-size: 70px;
+
+          span {
+            color: $color_1;
+          }
+        }
+      }
+
+      .right {
+        p {
+          color: #ffffffa6;
+          max-width: 280px;
+          margin-bottom: 20px;
+          // font-size: 17px;
+        }
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .Banner {
+      .cont {
+        .wrap {
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          gap: 16px;
+          width: 100%;
+          max-width: 400px;
+          padding-bottom: 100px;
+
+          .left {
+            .detail {
+              // width: 100%;
+              p {
+                font-size: 14px;
+                // span {
+                //   display: block;
+                // }
+              }
+              margin-bottom: 16px;
+            }
+            h1 {
+              font-size: 35px;
+            }
+          }
+
+          .right {
+            p {
+              max-width: 100%;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes zoomBg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,110 @@
+.PlanSection {
+  background-color: $color_b2;
+  padding: 100px 0;
+
+  .wrap {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      flex-direction: column;
+      max-width: 350px;
+      gap: 50px;
+      margin: auto;
+    }
+  }
+}
+
+.planCard {
+  position: relative;
+
+  .line {
+    position: absolute;
+    top: 25%;
+    right: -25%;
+  }
+
+  .ico {
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    position: relative;
+    @include flexCenter;
+    cursor: pointer;
+
+    .blob {
+      position: absolute;
+      filter: brightness(0) saturate(100%) invert(11%) sepia(64%)
+        saturate(5372%) hue-rotate(349deg) brightness(104%) contrast(91%);
+    }
+
+    svg {
+      position: relative;
+      z-index: 10;
+      color: white;
+      font-size: 65px;
+    }
+  }
+
+  .text {
+    text-align: center;
+    h3 {
+      color: $color_1;
+      font-size: 28px;
+      text-transform: uppercase;
+      margin: 16px 0;
+      font-weight: 600;
+    }
+
+    p {
+      color: $color_text_grey;
+    }
+  }
+
+  &:hover {
+    .ico {
+      animation: giggle 0.6s cubic-bezier(0.25, 1.5, 0.5, 1);
+      .blob {
+        animation: giggle 1s cubic-bezier(0.25, 1.5, 0.5, 1);
+      }
+    }
+
+    .text {
+      h3 {
+        color: white;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .line {
+      display: none;
+    }
+  }
+}
+
+@keyframes giggle {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  40% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
