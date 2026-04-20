@@ -27,6 +27,8 @@
     .buttonGroup {
       display: flex;
       gap: 15px;
+      position: relative;
+      z-index: 10;
 
       .appBtn {
         transition: transform 0.3s ease;
