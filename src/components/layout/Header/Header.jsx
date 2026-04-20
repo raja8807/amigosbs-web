@@ -1,12 +1,14 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import styles from "./Header.module.scss";
 
 import Link from "next/link";
-import { ChevronDown, ChevronRight } from "react-bootstrap-icons";
+import { BellFill, ChevronDown, ChevronRight, EnvelopeAt, EnvelopeAtFill, TelephoneFill } from "react-bootstrap-icons";
 import RightMenu from "./menu_button/menu_button";
 import { PAGES } from "@/constants/constants";
 import Logo from "@/components/common/logo/logo";
+import FONTS from "@/styles/fonts";
+import { CONTACT_DETAILS } from "@/constants/conatct";
 
 const DropDownItem = ({ item, setParentDropdown }) => {
   const [showSubDropDown, setShowSubDropDown] = useState(false);
@@ -49,7 +51,7 @@ const DropDownItem = ({ item, setParentDropdown }) => {
     <Link
       href={item.href || "#"}
       onClick={() => {
-        
+
         setParentDropdown(false);
       }}
     >
@@ -106,7 +108,7 @@ const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const [isScrolled,setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -135,12 +137,26 @@ const Header = () => {
     <header
       className={`${styles.Header} ${showHeader ? styles.show : styles.hide}
       ${isScrolled ? styles.scrolled : ''}
-      
+      ${FONTS.font2}
       `}
     >
+      <div className={styles.topHead}>
+        <CustomContainer>
+          <div
+            className={styles.topWrap}
+          >
+
+            <p><BellFill /> Get 50% Discount for Amigos' New Member</p>
+            <div>
+              <p><TelephoneFill /> Call us {CONTACT_DETAILS.phone1.text}</p>
+              <p><EnvelopeAtFill /> Message us {CONTACT_DETAILS.emails[0]}</p>
+            </div>
+          </div>
+        </CustomContainer>
+      </div>
       <CustomContainer>
         <div className={styles.wrap}>
-          <Logo width={isScrolled ? 110 : 110}/>
+          <Logo width={isScrolled ? 110 : 110} />
           <div className={styles.left}>
             <nav className={styles.navLg}>
               <ul>

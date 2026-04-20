@@ -8,7 +8,7 @@ const BannerSection = () => {
   const bgImages = [
     {
       id: "1",
-      src: "/images/banner-bg.jpg",
+      src: "/images/banner-bg.webp",
     },
     {
       id: "2",

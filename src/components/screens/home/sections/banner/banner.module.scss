@@ -7,7 +7,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      background-position: bottom;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       // animation: zoomBg 20s infinite alternate;
@@ -18,7 +18,7 @@
     position: relative;
     z-index: 10;
     // background-color: rgba(0, 0, 0, 0.3);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
     height: 100%;
 
     .wrap {
@@ -29,6 +29,7 @@
       max-width: 1180px;
       margin: auto;
       padding-bottom: 30px;
+
       // background-color: red;
       .left {
         * {
@@ -44,15 +45,16 @@
             letter-spacing: 10px;
             text-transform: uppercase;
           }
+
           .bar {
-            > div {
+            >div {
               height: 2px;
               background-color: $color_1;
               width: 50%;
             }
 
             &.barTop {
-              > div {
+              >div {
                 margin: 0 0 0 auto;
               }
             }
@@ -94,6 +96,7 @@
 
           .left {
             .detail {
+
               // width: 100%;
               p {
                 font-size: 14px;
@@ -101,8 +104,10 @@
                 //   display: block;
                 // }
               }
+
               margin-bottom: 16px;
             }
+
             h1 {
               font-size: 35px;
             }
@@ -124,9 +129,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }

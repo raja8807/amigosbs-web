@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import {
   ChevronDown,
+  EnvelopeAtFill,
+  GeoAlt,
+  GeoAltFill,
   List,
   Telephone,
   TelephoneFill,
@@ -11,6 +14,8 @@ import { Offcanvas } from "react-bootstrap";
 import Link from "next/link";
 import { CONTACT_DETAILS } from "@/constants/conatct";
 import Logo from "@/components/common/logo/logo";
+import FONTS from "@/styles/fonts";
+import { PAGES } from "@/constants/constants";
 
 const NavItem = ({ item, setShowDrawer }) => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -73,7 +78,8 @@ const RightMenu = ({ pages }) => {
         href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`}
         className={styles.callBtn}
       >
-        <TelephoneFill /> <span>{CONTACT_DETAILS.phone1.text} </span>
+        <TelephoneFill />
+        <span>Make Appoinment</span>
       </Link>
 
       <div className={styles.MenuButton}>
@@ -96,6 +102,7 @@ const RightMenu = ({ pages }) => {
           </Offcanvas.Header>
 
           <Offcanvas.Body className={styles.drawerBody}>
+            
             <div>
               <nav className={styles.navSm}>
                 <ul>
@@ -110,6 +117,38 @@ const RightMenu = ({ pages }) => {
                   })}
                 </ul>
               </nav>
+            </div>
+
+            <div className={FONTS.font2}>
+              <div className={styles.row}>
+                <b>Our Services</b>
+                {PAGES[1].dropdown.map((ser) => {
+                  return (
+                    <Link href={"/"} key={ser.title}>
+                      <p>{ser.title}</p>
+                    </Link>
+                  );
+                })}
+              </div>
+
+              <div className={styles.row}>
+                <b>Contact Us</b>
+                <p>
+                  <GeoAltFill />
+                  {CONTACT_DETAILS.address[0]}
+                </p>
+                <p>{CONTACT_DETAILS.address[1]}</p>
+                <p>{CONTACT_DETAILS.address[2]}</p>
+                <p>{CONTACT_DETAILS.address[3]}</p>
+                <br />
+                <p>
+                  <TelephoneFill /> {CONTACT_DETAILS.phone1.text}
+                </p>
+                <br />
+                <p>
+                  <EnvelopeAtFill /> {CONTACT_DETAILS.emails[0]}
+                </p>
+              </div>
             </div>
           </Offcanvas.Body>
         </Offcanvas>

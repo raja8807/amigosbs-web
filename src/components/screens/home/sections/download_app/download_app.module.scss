@@ -1,0 +1,124 @@
+.downloadAppSection {
+  padding: 100px 0;
+  background-color: $color_1;
+  overflow: hidden;
+  position: relative;
+
+  .textColumn {
+    padding-right: 50px;
+
+    .title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 25px;
+      // max-width: 450px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 40px;
+      max-width: 480px;
+    }
+
+    .buttonGroup {
+      display: flex;
+      gap: 15px;
+
+      .appBtn {
+        transition: transform 0.3s ease;
+
+        img {
+          height: 50px;
+          width: auto;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  .imageColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .imageWrapper {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+
+      .phoneImage {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .bgDecoration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 140%;
+        height: 140%;
+        z-index: 1;
+
+        .blob1 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 80%;
+          opacity: 0.5;
+        }
+
+        .blob2 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 70%;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  @include respond-below(lg) {
+    text-align: center;
+    padding: 60px 0;
+
+    .textColumn {
+      padding-right: 0;
+      margin-bottom: 50px;
+
+      .title {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttonGroup {
+        justify-content: center;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .textColumn {
+      .title {
+        font-size: 32px;
+      }
+    }
+  }
+}

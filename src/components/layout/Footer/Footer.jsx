@@ -113,19 +113,31 @@ const Footer = () => {
           </Col>
 
           <Col lg={3} md={6} sm={12} className={styles.footerCol}>
-            <h4 className={styles.widgetTitle}>Contact Us</h4>
-            {/* <p className={styles.newsletterText}>Subscribe to our newsletter</p>
-            <form className={styles.newsletterForm}>
-              <input
-                type="email"
-                placeholder="Email address.."
-                required
-                className={styles.emailInput}
-              />
-              <button type="submit" className={styles.subscribeBtn}>
-                Subscribe
-              </button>
-            </form> */}
+            <h4 className={`${styles.widgetTitle} ${FONTS.font2}`}>
+              Contact Us
+            </h4>
+            <ul className={styles.contactList}>
+              <li>
+                <span className={styles.address}>
+                  {CONTACT_DETAILS.address.map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </span>
+              </li>
+              <li className={styles.contactItem}>
+                <a href={`tel:+${CONTACT_DETAILS.phone1.number}`}>
+                  {CONTACT_DETAILS.phone1.text}
+                </a>
+              </li>
+              <li className={styles.contactItem}>
+                <a href={`mailto:${CONTACT_DETAILS.emails[0]}`}>
+                  {CONTACT_DETAILS.emails[0]}
+                </a>
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>

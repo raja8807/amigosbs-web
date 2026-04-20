@@ -1,6 +1,58 @@
+// SERVICES
+
+// CLIENTS
+
+// CAREERS
+
+// TERMS AND CONDITION
+
+// BOOK ONLINE
+
+// CONTACT
+
+// CAR RENTAL
+
+// EMPLOYEE TRANPORTATION
+
+// EVENT MANAGEMENT
+
+// INBOUND AND OUTBOUND TOURS
+
 export const PAGES = [
   { title: "About Us", href: "/about" },
-  { title: "Services", href: "/services" },
+  {
+    title: "Services",
+    href: "/services",
+
+    dropdown: [
+      {
+        title: "Car Rental",
+        href: "services/car-rental",
+      },
+      {
+        title: "Employee Transportation",
+        href: "services/",
+      },
+      {
+        title: "Event Management",
+        href: "services/",
+      },
+      {
+        title: "Inbound and Outbound Tours",
+        href: "services/",
+      },
+      {
+        title: "Wedding Planner",
+        href: "services/",
+      },
+    ],
+  },
+  {
+    title: "Clients",
+    href: "/clients",
+  },
+
+  { title: "Careers", href: "/careers" },
   { title: "Contact", href: "/contact" },
 ];
 

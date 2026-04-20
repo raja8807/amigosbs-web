@@ -10,16 +10,16 @@ export const CONTACT_DETAILS = {
       "Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tour%20packages%20and%20destinations.",
   },
   emails: [
-    "marshall@worldwings.in",
+    "support@amigosbs.com",
     "chennai@worldwings.in",
     "christy@worldwings.in",
   ],
 
   address: [
-    "World Wings Tours & Travel",
-    "1A, Pleasant Apartment, No.45",
-    " Taylors Road, Kilpauk",
-    " Chennai-600010. ",
+    "Amigos Business Solutions",
+    "168, Thirugnana Sambandar Street, ",
+    "Thiruvalleeswarar Nagar, ",
+    "Anna Nagar, Chennai -600040.",
   ],
 };
 
@@ -27,10 +27,10 @@ export const BRANCHES = [
   {
     title: "CHENNAI Location",
     address: [
-      "World Wings Tours & Travel",
-      "1A, Pleasant Apartment, ",
-      "No.45, Taylors Road, ",
-      "Kilpauk, Chennai-600010.",
+      "Amigos Business Solutions",
+      "168, Thirugnana Sambandar Street, ",
+      "Thiruvalleeswarar Nagar, ",
+      "Anna Nagar, Chennai -600040.",
     ],
     emails: [
       "chennai@worldwings.in",
