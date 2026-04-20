@@ -146,7 +146,7 @@ const Header = () => {
             className={styles.topWrap}
           >
 
-            <p><BellFill /> Get 50% Discount for Amigos' New Member</p>
+            <p><BellFill /> Get 50% Discount for Amigos&apos; New Member</p>
             <div>
               <p><TelephoneFill /> Call us {CONTACT_DETAILS.phone1.text}</p>
               <p><EnvelopeAtFill /> Message us {CONTACT_DETAILS.emails[0]}</p>
