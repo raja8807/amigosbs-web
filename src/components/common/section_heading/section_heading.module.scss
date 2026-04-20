@@ -28,6 +28,16 @@
     }
   }
 
+  &.v3 {
+    p {
+      color: $color_b1;
+    }
+
+    h2 {
+      color: $color_1;
+    }
+  }
+
   @include respond-below(md) {
     p {
       font-size: 18px;

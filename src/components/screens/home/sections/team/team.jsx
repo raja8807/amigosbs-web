@@ -33,7 +33,7 @@ const TeamSection = () => {
     <section className={styles.TeamSection}>
       <CustomContainer>
         <div className={styles.heading_container}>
-          <SectionHeading title="OUR DRIVERS" head="Meet Our Professional Taxi Drivers" variation={2} />
+          <SectionHeading title="OUR DRIVERS" head="Meet Our Professional Taxi Drivers" variation={3} />
           <p className={styles.description} data-aos="fade-up" data-aos-delay="100">
             Our Taxi Booking Service is designed to make your travel experience fast, safe, and convenient — whether you&apos;re heading to work,.
           </p>
