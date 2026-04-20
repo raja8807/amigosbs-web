@@ -11,8 +11,8 @@ export const CONTACT_DETAILS = {
   },
   emails: [
     "support@amigosbs.com",
-    "chennai@worldwings.in",
-    "christy@worldwings.in",
+    "chennai@amigosbs.com",
+    "christy@amigosbs.com",
   ],
 
   address: [
@@ -33,9 +33,9 @@ export const BRANCHES = [
       "Anna Nagar, Chennai -600040.",
     ],
     emails: [
-      "chennai@worldwings.in",
-      "marshall@worldwings.in",
-      "christy@worldwings.in",
+      "chennai@amigosbs.com",
+      "marshall@amigosbs.com",
+      "christy@amigosbs.com",
     ],
     phones: [
       "Office: +91 44 2648 2600 / +9196778 60678",
@@ -45,12 +45,12 @@ export const BRANCHES = [
   {
     title: "TRICHY Location",
     address: [
-      "World Wings Tours & Travel",
+      "Amigos Business Solutions",
       "No.14/1, St. Ann’s Complex, ",
       "Convent Rd, Melapudur, ",
       "Trichy- 620 001.",
     ],
-    emails: ["trichy@worldwings.in", "pathinathan@worldwings.in"],
+    emails: ["trichy@amigosbs.com", "pathinathan@amigosbs.com"],
     phones: [
       "+91 431 241 0505 / +91 81240 81679",
       "+91 94431 26261 / +91 86950 39389",

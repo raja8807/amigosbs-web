@@ -38,9 +38,9 @@ const Footer = () => {
                 className={styles.logoImage}
               />
               <p className={styles.description}>
-               Our Taxi Booking Service is designed to make your travel experience fast, safe, and convenient — whether you&apos;re heading to work, the airport, or just exploring the city.
+                Our Taxi Booking Service is designed to make your travel experience fast, safe, and convenient — whether you&apos;re heading to work, the airport, or just exploring the city.
               </p>
-{/* 
+              {/* 
               <div className={styles.contactInfo}>
                 <div className={styles.iconWrapper}>
                   <TelephoneFill />
@@ -100,11 +100,11 @@ const Footer = () => {
             </h4>
 
             <ul className={styles.linkList}>
-              {POPULAR_DESTINATIONS.map((pd) => {
+              {PAGES[1].dropdown.map((pd) => {
                 return (
-                  <li key={pd.name}>
+                  <li key={pd.title}>
                     <Link href={pd.href || "#"}>
-                      <CaretRightFill className={styles.bulletIcon} /> {pd.name}
+                      <CaretRightFill className={styles.bulletIcon} /> {pd.title}
                     </Link>
                   </li>
                 );
