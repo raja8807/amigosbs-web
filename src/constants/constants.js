@@ -27,23 +27,23 @@ export const PAGES = [
     dropdown: [
       {
         title: "Car Rental",
-        href: "services/car-rental",
+        href: "/services/car-rental",
       },
       {
         title: "Employee Transportation",
-        href: "services/",
+        href: "/services/employee-transportation",
       },
       {
         title: "Event Management",
-        href: "services/",
+        href: "/services/event-management",
       },
       {
         title: "Inbound and Outbound Tours",
-        href: "services/",
+        href: "/services/inbound-and-outbound-tours",
       },
       {
         title: "Wedding Planner",
-        href: "services/",
+        href: "/services/wedding-planner",
       },
     ],
   },

@@ -1,0 +1,143 @@
+.AboutIntro {
+  padding: 100px 0;
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+
+  .image_side {
+    flex: 1;
+    position: relative;
+    padding-bottom: 50px;
+
+    .image_main {
+      width: 85%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    .image_sub {
+      width: 70%;
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+
+  .text_side {
+    flex: 1;
+
+    .tag {
+      margin-bottom: 20px;
+      span {
+        color: #ff1a1a;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 30px;
+          height: 2px;
+          background-color: #ff1a1a;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+      line-height: 1.2;
+      font-weight: 700;
+
+      @media (max-width: 576px) {
+        font-size: 32px;
+      }
+    }
+
+    .desc {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #cccccc;
+      margin-bottom: 20px;
+    }
+
+    .group_companies {
+      margin-top: 40px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #ff1a1a;
+      border-radius: 4px;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        li {
+          font-size: 16px;
+          color: #ff1a1a;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &::before {
+            content: "•";
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './team.module.scss';
-import Image from 'next/image';
 import FONTS from '@/styles/fonts';
 import CustomContainer from '@/components/ui/custom_container/custom_container';
 import SectionHeading from '@/components/common/section_heading/section_heading';
+import { Image } from 'react-bootstrap';
 
 const teamMembers = [
   {
@@ -44,7 +44,7 @@ const TeamSection = () => {
             <div className="col-12 col-sm-6 col-lg-3 mb-4" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
               <div className={styles.team_card}>
                 <div className={styles.image_wrapper}>
-                  <Image src={member.image} alt={member.name} layout="fill" objectFit="cover" />
+                  <Image src={member.image} alt={member.name} fluid />
                 </div>
                 <div className={styles.card_content}>
                   <h3 className={FONTS.font2}>{member.name}</h3>
