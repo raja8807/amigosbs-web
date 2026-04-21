@@ -16,7 +16,7 @@ const ContactFormSection = () => {
               </div>
               <h2 className={FONTS.font2}>We are always ready to help you</h2>
               <p>
-                Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we'll get back to you as soon as possible.
+                Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we&apos;ll get back to you as soon as possible.
               </p>
             </div>
           </div>
