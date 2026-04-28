@@ -1,18 +1,16 @@
 export const CONTACT_DETAILS = {
   phone1: {
-    number: "9444175678",
-    text: "+91 99622 83299",
+    number: "8925656901",
+    text: "+91 89256 56901",
   },
   whatsapp1: {
-    number: "919444175678",
-    text: "+91 94441 75678",
+    number: "918925656901",
+    text: "+91 89256 56901",
     message:
-      "Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tour%20packages%20and%20destinations.",
+      "Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
   },
   emails: [
-    "support@amigosbs.com",
-    "chennai@amigosbs.com",
-    "christy@amigosbs.com",
+    "reservation@amigosbs.com",
   ],
 
   address: [
@@ -33,13 +31,10 @@ export const BRANCHES = [
       "Anna Nagar, Chennai -600040.",
     ],
     emails: [
-      "chennai@amigosbs.com",
-      "marshall@amigosbs.com",
-      "christy@amigosbs.com",
+      "reservation@amigosbs.com"
     ],
     phones: [
-      "Office: +91 44 2648 2600 / +9196778 60678",
-      "Mobile: +91 94441 75678 / +91 94454 75692",
+      "+91 89256 56901"
     ],
   },
   {

@@ -8,16 +8,9 @@ const BannerSection = () => {
   const bgImages = [
     {
       id: "1",
-      src: "/images/banner-bg.webp",
+      src: "/images/banner.jpeg",
     },
-    {
-      id: "2",
-      src: "/images/banner-bg.webp",
-    },
-    {
-      id: "3",
-      src: "/images/banner-bg.webp",
-    },
+
   ];
 
   return (
@@ -36,24 +29,24 @@ const BannerSection = () => {
               <div className={styles.left}>
                 <div className={styles.detail}>
                   <div className={`${styles.bar} ${styles.barTop}`}
-                  data-aos-delay="1500" data-aos="fade-left"
+                    data-aos-delay="1500" data-aos="fade-left"
                   >
                     <div />
                   </div>
-                  <p 
-                  data-aos-delay="1500" data-aos="fade-in"
-                  
+                  <p
+                    data-aos-delay="1500" data-aos="fade-in"
+
                   >Plan your trip now</p>
                   <div className={`${styles.bar} ${styles.barBot}`}
-                  data-aos-delay="1500" data-aos="fade-right"
-                  
+                    data-aos-delay="1500" data-aos="fade-right"
+
                   >
                     <div />
                   </div>
                 </div>
                 <h1 className={FONTS.font2}
                   data-aos-delay="1500" data-aos="fade-right"
-                
+
                 >
                   Save <span>big</span> with
                   <br />
@@ -65,8 +58,8 @@ const BannerSection = () => {
               </div>
 
               <div className={styles.right}
-                  data-aos-delay="1500" data-aos="fade-left"
-              
+                data-aos-delay="1500" data-aos="fade-left"
+
               >
                 <p>
                   Amigos Business Solutions is a company headquartered in

@@ -9,7 +9,7 @@ import {
   Youtube,
   CaretRightFill,
 } from "react-bootstrap-icons";
-import { PAGES, POPULAR_DESTINATIONS } from "@/constants/constants";
+import { PAGES } from "@/constants/constants";
 import { CONTACT_DETAILS } from "@/constants/conatct";
 import FONTS from "@/styles/fonts";
 

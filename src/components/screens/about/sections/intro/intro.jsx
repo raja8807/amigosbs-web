@@ -34,7 +34,7 @@ const AboutIntro = () => {
             <div className={styles.group_companies}>
               <h3>Group Companies</h3>
               <ul>
-                <li>Amigos Rent A Car</li>
+                <li>Amigos Rent A Car Pvt Ltd</li>
                 <li>AMG HOLIDAYS</li>
               </ul>
             </div>
