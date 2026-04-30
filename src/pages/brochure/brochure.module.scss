@@ -1,0 +1,11 @@
+.BrochurePage {
+  height: 100dvh;
+  padding-top: 100px;
+
+  iframe {
+    div[class="toolbar"] {
+      display: none !important;
+      background-color: red;
+    }
+  }
+}

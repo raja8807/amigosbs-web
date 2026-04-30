@@ -2,10 +2,13 @@
 
 body {
   background-color: #fff8f3;
-
 }
 
-section{
+.toolbar {
+  display: none;
+}
+
+section {
   max-width: 100vw;
   overflow: hidden;
 }
