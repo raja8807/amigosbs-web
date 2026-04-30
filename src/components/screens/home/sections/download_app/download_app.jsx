@@ -31,7 +31,7 @@ const DownloadAppSection = () => {
               data-aos-delay="300"
               >
                 <CustomButton variant={3}                
-                >Download Brochure</CustomButton>
+                >View Brochure</CustomButton>
               </Link>
           </Col>
           <Col lg={5} md={12} className={styles.imageColumn}>
