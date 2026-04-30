@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./download_app.module.scss";
 import FONTS from "@/styles/fonts";
+import CustomButton from "@/components/ui/custom_button/custom_button";
+import Link from "next/link";
 
 const DownloadAppSection = () => {
   return (
@@ -24,6 +26,13 @@ const DownloadAppSection = () => {
                 <Image src="/assets/ios-app-btn.svg" alt="App Store" />
               </a>
             </div>
+              <Link href={'/brochure'} target="_blank" className={styles.brochure}
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >
+                <CustomButton variant={3}                
+                >Download Brochure</CustomButton>
+              </Link>
           </Col>
           <Col lg={5} md={12} className={styles.imageColumn}>
             <div className={styles.imageWrapper}>

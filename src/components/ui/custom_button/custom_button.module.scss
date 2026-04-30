@@ -25,4 +25,12 @@
       color: white;
     }
   }
+  &.v3 {
+    background-color: white;
+    color: $color_1;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }

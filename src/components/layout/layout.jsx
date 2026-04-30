@@ -8,6 +8,7 @@ import styles from "./layout.module.scss";
 import { Headphones, Headset, Whatsapp } from "react-bootstrap-icons";
 import { Image } from "react-bootstrap";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const EnquireButton = ({ setShow }) => {
   return (
@@ -46,9 +47,15 @@ const Layout = ({ children }) => {
   //   }
   // }, [])
 
+  const router = useRouter();
+  const noSubheader = router.pathname === "/brochure"
+
+ 
+  
+
   return (
     <div className={styles.Layout}>
-      <Header  />
+      <Header  noSubheader={noSubheader}/>
       {children}
       {/* <EnquireButton setShow={setShow} />
       <WhatsappButton /> */}
