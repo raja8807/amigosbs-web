@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Amigos | Home</title>
+        <title>Amigos | Car Rental Service In Chennai</title>
       </Head>
 
       <main className={FONTS.font1}>
