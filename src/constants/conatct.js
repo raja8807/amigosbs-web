@@ -51,4 +51,15 @@ export const BRANCHES = [
       "+91 94431 26261 / +91 86950 39389",
     ],
   },
+  {
+    title: "NANGANALLUR Location",
+    address: [
+      "Amigos Rent A Car",
+      "#5, BM Complex 45th Street, ",
+      "Thilai Ganga Nagar, Nanganallur, ",
+      "Chennai -600 061.",
+    ],
+    emails: ["reservation@amigosbs.com"],
+    phones: ["+91 89256 56901"],
+  },
 ];

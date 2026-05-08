@@ -1,6 +1,7 @@
 import React from "react";
 import PageBanner from "@/components/common/page_banner/page_banner";
 import ServiceContent from "./sections/content/content";
+import SafetySection from "./sections/safety/safety";
 
 const ServiceDetailScreen = ({ data }) => {
   if (!data) return null;
@@ -12,6 +13,7 @@ const ServiceDetailScreen = ({ data }) => {
         image={data.bannerImage} 
       />
       <ServiceContent data={data} />
+      <SafetySection data={data} />
     </>
   );
 };

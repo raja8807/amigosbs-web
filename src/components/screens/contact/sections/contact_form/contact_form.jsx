@@ -3,6 +3,8 @@ import styles from "./contact_form.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import FONTS from "@/styles/fonts";
 import CustomButton from "@/components/ui/custom_button/custom_button";
+import { CONTACT_DETAILS } from "@/constants/conatct";
+import { EnvelopeAtFill, GeoAltFill, TelephoneFill } from "react-bootstrap-icons";
 
 const ContactFormSection = () => {
   return (
@@ -16,8 +18,54 @@ const ContactFormSection = () => {
               </div>
               <h2 className={FONTS.font2}>We are always ready to help you</h2>
               <p>
-                Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we&apos;ll get back to you as soon as possible.
+                Whether you have a question, a suggestion, or just want to say hello, this is the place to do it.
               </p>
+
+              <div className={styles.contactInfo}>
+                <div className={styles.infoItem}>
+                  <TelephoneFill />
+                  <div className={styles.infoText}>
+                    <b>Call Us</b>
+                    <a href={`tel:${CONTACT_DETAILS.phone1.number}`}>{CONTACT_DETAILS.phone1.text}</a>
+                  </div>
+                </div>
+                <div className={styles.infoItem}>
+                  <EnvelopeAtFill />
+                  <div className={styles.infoText}>
+                    <b>Email Us</b>
+                    <a href={`mailto:${CONTACT_DETAILS.emails[0]}`}>{CONTACT_DETAILS.emails[0]}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.locations}>
+                <div className={styles.locationItem}>
+                  <GeoAltFill />
+                  <div className={styles.infoText}>
+                    <b>Anna Nagar Office</b>
+                    <p>
+                      {CONTACT_DETAILS.address.map((line, index) => (
+                        <React.Fragment key={index}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.locationItem}>
+                  <GeoAltFill />
+                  <div className={styles.infoText}>
+                    <b>Nanganallur Office</b>
+                    <p>
+                      Amigos Rent A Car <br />
+                      #5, BM Complex 45th Street, <br />
+                      Thilai Ganga Nagar, Nanganallur, <br />
+                      Chennai -600 061.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.right}>

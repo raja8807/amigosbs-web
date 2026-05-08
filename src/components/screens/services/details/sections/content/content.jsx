@@ -1,8 +1,8 @@
-import React from "react";
 import styles from "./content.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import FONTS from "@/styles/fonts";
 import { CheckCircleFill } from "react-bootstrap-icons";
+import Image from "next/image";
 
 const ServiceContent = ({ data }) => {
   return (
@@ -16,6 +16,18 @@ const ServiceContent = ({ data }) => {
                 <p key={i}>{para}</p>
               ))}
             </div>
+
+            {data.contentImage && (
+              <div className={styles.content_image_wrapper}>
+                <Image 
+                  src={data.contentImage} 
+                  alt={data.title} 
+                  width={800} 
+                  height={500} 
+                  className={styles.content_image}
+                />
+              </div>
+            )}
           </div>
           <div className={styles.right_side} data-aos="fade-left">
             <div className={styles.features_card}>

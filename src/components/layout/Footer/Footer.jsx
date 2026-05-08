@@ -118,6 +118,7 @@ const Footer = () => {
             </h4>
             <ul className={styles.contactList}>
               <li>
+                <b className={styles.branchTitle}>Anna Nagar Office</b>
                 <span className={styles.address}>
                   {CONTACT_DETAILS.address.map((line, index) => (
                     <React.Fragment key={index}>
@@ -125,6 +126,15 @@ const Footer = () => {
                       <br />
                     </React.Fragment>
                   ))}
+                </span>
+              </li>
+              <li>
+                <b className={styles.branchTitle}>Nanganallur Office</b>
+                <span className={styles.address}>
+                  Amigos Rent A Car <br />
+                  #5, BM Complex 45th Street, <br />
+                  Thilai Ganga Nagar, Nanganallur, <br />
+                  Chennai -600 061.
                 </span>
               </li>
               <li className={styles.contactItem}>

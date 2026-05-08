@@ -17,6 +17,7 @@ export const SERVICES_DATA = {
   "employee-transportation": {
     title: "Employee Transportation",
     bannerImage: "/images/about/banner.png",
+    contentImage: "/images/employee transportation.webp",
     description: "We provide end-to-end transport solutions based on client needs, focusing on efficiency and cost control.",
     fullContent: [
       "Our team works diligently to ensure maximum occupancy and streamlined logistics for employee commutes.",
@@ -28,6 +29,48 @@ export const SERVICES_DATA = {
       "Cost-Efficient Routing",
       "Premium Fleet Maintenance",
       "Safety First Approach"
+    ],
+    safetyFeatures: [
+      {
+        title: "Safe Reach",
+        desc: "Multi-mode Safe reach Confirmation for female employee",
+      },
+      {
+        title: "Instant SOS Call",
+        desc: "Instant call trigger with alarm when the SOS is raised",
+      },
+      {
+        title: "Call Masking",
+        desc: "Call Masking on recorded lines for employee privacy",
+      },
+      {
+        title: "Contactless Confirmation",
+        desc: "Contactless confirmation using Safetrax App or via Dual OTP",
+      },
+      {
+        title: "Intelligent Routing or Route Planning",
+        desc: "Special Routing for female employees",
+      },
+      {
+        title: "Blacklisting Non-Compliant Drivers",
+        desc: "Blacklists drivers who are found non-compliant",
+      },
+      {
+        title: "Escort Management",
+        desc: "Auto assigning Escort during the trip as per company policy",
+      },
+      {
+        title: "Violation Alerts",
+        desc: "Geo-fence violation, over-speeding and route deviation alerts",
+      },
+      {
+        title: "Share Trip",
+        desc: "Share trip link with near and dear ones",
+      },
+      {
+        title: "Feedback and Ratings",
+        desc: "Employee feedback and can rate driver & cab hygiene",
+      },
     ]
   },
   "event-management": {
