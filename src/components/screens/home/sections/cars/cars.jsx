@@ -140,6 +140,21 @@ const CarsSection = () => {
   const [selectedType, setSelectedType] = useState(null);
   const [viewedCar, setViewedCar] = useState(null);
 
+  useEffect(() => {
+  const allImages = [];
+
+  categories.forEach((category) => {
+    category.cars.forEach((car) => {
+      allImages.push(`/images/cars/${car.image}`);
+    });
+  });
+
+  allImages.forEach((src) => {
+    const img = new window.Image();
+    img.src = src;
+  });
+}, []);
+
   return (
     <section className={styles.CarsSection}>
       <SectionHeading head="Our rental fleet" title={" Vehicle Models "} />
@@ -212,14 +227,7 @@ const CarsSection = () => {
                         alt={viewedCar || category.name}
                         fluid
                         key={viewedCar}
-                        onLoadStart={(e) => {
-                          e.target.src = "/images/cars/Standard.png";
-                        }}
-                        onLoadedData={(e) => {
-                          viewedCar
-                            ? `/images/cars/${viewedCar.image}`
-                            : `/images/cars/${filteredCars[0].image}`;
-                        }}
+                 
                         onError={(e) => {
                           // Fallback to a default image if category image doesn't exist
                           e.target.src = "/images/cars/Standard.png";
