@@ -71,7 +71,11 @@ const CarsSection = () => {
           type: "Sedan",
           image: "/premium/sedan/benz e class.png",
         },
-        { name: "Benz S Class", type: "Sedan", image: "/premium/sedan/benz e clas.png" },
+        {
+          name: "Benz S Class",
+          type: "Sedan",
+          image: "/premium/sedan/benz e clas.png",
+        },
         {
           name: "Benz GLS",
           type: "Sedan",
@@ -208,6 +212,14 @@ const CarsSection = () => {
                         alt={viewedCar || category.name}
                         fluid
                         key={viewedCar}
+                        onLoadStart={(e) => {
+                          e.target.src = "/images/cars/Standard.png";
+                        }}
+                        onLoadedData={(e) => {
+                          viewedCar
+                            ? `/images/cars/${viewedCar.image}`
+                            : `/images/cars/${filteredCars[0].image}`;
+                        }}
                         onError={(e) => {
                           // Fallback to a default image if category image doesn't exist
                           e.target.src = "/images/cars/Standard.png";
@@ -222,11 +234,9 @@ const CarsSection = () => {
                               key={t}
                               className={`${styles.typeTab} ${currentType === t ? styles.activeType : ""}`}
                               onClick={() => {
-                                
                                 setSelectedType(t);
-                                
+
                                 // setViewedCar(filteredCars[0]);
-                            
                               }}
                             >
                               {t}
