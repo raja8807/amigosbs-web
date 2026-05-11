@@ -10,7 +10,6 @@ const BannerSection = () => {
       id: "1",
       src: "/images/banner.jpeg",
     },
-
   ];
 
   return (
@@ -24,29 +23,32 @@ const BannerSection = () => {
         ></div>
 
         <div className={styles.cont}>
-          <CustomContainer >
+          <CustomContainer>
             <div className={styles.wrap}>
               <div className={styles.left}>
                 <div className={styles.detail}>
-                  <div className={`${styles.bar} ${styles.barTop}`}
-                    data-aos-delay="1500" data-aos="fade-left"
+                  <div
+                    className={`${styles.bar} ${styles.barTop}`}
+                    data-aos-delay="1500"
+                    data-aos="fade-left"
                   >
                     <div />
                   </div>
-                  <p
-                    data-aos-delay="1500" data-aos="fade-in"
-
-                  >Plan your trip now</p>
-                  <div className={`${styles.bar} ${styles.barBot}`}
-                    data-aos-delay="1500" data-aos="fade-right"
-
+                  <p data-aos-delay="1500" data-aos="fade-in">
+                    Plan your trip now
+                  </p>
+                  <div
+                    className={`${styles.bar} ${styles.barBot}`}
+                    data-aos-delay="1500"
+                    data-aos="fade-right"
                   >
                     <div />
                   </div>
                 </div>
-                <h1 className={FONTS.font2}
-                  data-aos-delay="1500" data-aos="fade-right"
-
+                <h1
+                  className={FONTS.font2}
+                  data-aos-delay="1500"
+                  data-aos="fade-right"
                 >
                   Save <span>big</span> with
                   <br />
@@ -57,9 +59,10 @@ const BannerSection = () => {
                 </h1>
               </div>
 
-              <div className={styles.right}
-                data-aos-delay="1500" data-aos="fade-left"
-
+              <div
+                className={styles.right}
+                data-aos-delay="1500"
+                data-aos="fade-left"
               >
                 <p>
                   Amigos Business Solutions is a company headquartered in

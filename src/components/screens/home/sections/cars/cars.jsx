@@ -207,6 +207,7 @@ const CarsSection = () => {
                         }
                         alt={viewedCar || category.name}
                         fluid
+                        key={viewedCar}
                         onError={(e) => {
                           // Fallback to a default image if category image doesn't exist
                           e.target.src = "/images/cars/Standard.png";
