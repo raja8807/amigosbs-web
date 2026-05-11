@@ -24,7 +24,7 @@ const BannerSection = () => {
         ></div>
 
         <div className={styles.cont}>
-          <CustomContainer>
+          <CustomContainer >
             <div className={styles.wrap}>
               <div className={styles.left}>
                 <div className={styles.detail}>
