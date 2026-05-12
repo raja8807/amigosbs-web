@@ -1,8 +1,9 @@
 import styles from "./content.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import FONTS from "@/styles/fonts";
+import { Image, Carousel } from "react-bootstrap";
 import { CheckCircleFill } from "react-bootstrap-icons";
-import Image from "next/image";
+
 
 const ServiceContent = ({ data }) => {
   return (
@@ -16,20 +17,9 @@ const ServiceContent = ({ data }) => {
                 <p key={i}>{para}</p>
               ))}
             </div>
-
-            {data.contentImage && (
-              <div className={styles.content_image_wrapper}>
-                <Image 
-                  src={data.contentImage} 
-                  alt={data.title} 
-                  width={800} 
-                  height={500} 
-                  className={styles.content_image}
-                />
-              </div>
-            )}
           </div>
           <div className={styles.right_side} data-aos="fade-left">
+        
             <div className={styles.features_card}>
               <h3>Key Offerings</h3>
               <ul className={styles.feature_list}>
@@ -41,6 +31,33 @@ const ServiceContent = ({ data }) => {
                 ))}
               </ul>
             </div>
+            {data.images && data.images.length > 0 ? (
+              <div className={styles.carousel_wrapper}>
+                <Carousel fade indicators={true} controls={true} interval={3000}>
+                  {data.images.map((img, idx) => (
+                    <Carousel.Item key={idx}>
+                      <Image
+                        src={img}
+                        alt={`${data.title} ${idx + 1}`}
+                        fluid
+                        className={styles.content_image}
+                      />
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
+              </div>
+            ) : (
+              data.contentImage && (
+                <div className={styles.content_image_wrapper}>
+                  <Image
+                    src={data.contentImage}
+                    alt={data.title}
+                    fluid
+                    className={styles.content_image}
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </CustomContainer>

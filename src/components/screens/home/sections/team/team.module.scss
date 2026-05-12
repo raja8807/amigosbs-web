@@ -1,6 +1,6 @@
 .TeamSection {
   padding: 80px 0;
-  background-color: #ffffff;
+  background-color: $color_b2;
 
   .heading_container {
     text-align: center;
@@ -13,7 +13,8 @@
       color: #7a7a7a;
       font-size: 16px;
       line-height: 1.6;
-      margin-top: -60px; /* Offset the 80px bottom margin from SectionHeading */
+      margin-top: -60px;
+      /* Offset the 80px bottom margin from SectionHeading */
     }
   }
 
@@ -23,7 +24,7 @@
     overflow: hidden;
     height: 380px;
     background-color: #fcebbb;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
 
     .image_wrapper {
       position: absolute;
@@ -39,13 +40,15 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       height: 60%;
-      background: linear-gradient(to top, rgba(14, 18, 28, 0.95) 0%, rgba(14, 18, 28, 0) 100%);
+      background: linear-gradient(to top,
+          rgba(14, 18, 28, 0.95) 0%,
+          rgba(14, 18, 28, 0) 100%);
       z-index: 2;
     }
 
@@ -54,9 +57,11 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      padding: 25px 20px;
+      // padding: 25px 20px;
       z-index: 3;
       text-align: left;
+      padding-bottom: 10px;
+      text-align: center;
 
       h3 {
         color: #ffffff;
@@ -73,10 +78,7 @@
       }
     }
 
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    }
+
   }
 
   @media (max-width: 768px) {
@@ -85,7 +87,10 @@
     }
 
     .team_card {
-      height: 340px;
+      // height: 340px;
+      // width: 100%;
+      aspect-ratio: 1 / 1;
+      margin: auto;
     }
   }
 }

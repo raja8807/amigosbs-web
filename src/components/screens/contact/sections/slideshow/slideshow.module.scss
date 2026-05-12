@@ -1,0 +1,106 @@
+.slideshowSection {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .carouselContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: relative;
+
+    :global {
+      .carousel-item {
+        height: 500px;
+        
+        @media (max-width: 768px) {
+          height: 350px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.8s ease;
+        }
+
+        &.active img {
+          transform: scale(1.05);
+        }
+      }
+
+      .carousel-indicators {
+        bottom: 20px;
+        
+        button {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin: 0 6px;
+          background-color: rgba(255, 255, 255, 0.5);
+          border: none;
+          transition: all 0.3s ease;
+
+          &.active {
+            background-color: #fff;
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 20px;
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.4);
+        }
+      }
+
+      .carousel:hover {
+        .carousel-control-prev,
+        .carousel-control-next {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .contentOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: #fff;
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  }
+}

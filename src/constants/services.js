@@ -18,6 +18,12 @@ export const SERVICES_DATA = {
     title: "Employee Transportation",
     bannerImage: "/images/about/banner.png",
     contentImage: "/images/employee transportation.webp",
+    images: [
+      "/images/Employee Transportation/1.jpg",
+      "/images/Employee Transportation/2.jpg",
+      "/images/Employee Transportation/3.jpg",
+      "/images/Employee Transportation/4.jpg"
+    ],
     description: "We provide end-to-end transport solutions based on client needs, focusing on efficiency and cost control.",
     fullContent: [
       "Our team works diligently to ensure maximum occupancy and streamlined logistics for employee commutes.",

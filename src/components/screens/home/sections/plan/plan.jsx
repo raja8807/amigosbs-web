@@ -7,27 +7,27 @@ import { CarFront, Headset, ShieldFillCheck } from "react-bootstrap-icons";
 import FONTS from "@/styles/fonts";
 
 const PlanSection = () => {
-  const cards = [
-    {
-      title: "Select Car",
-      text: "To contribute to positive change and achieve our sustainability goals with many extraordinary",
-      icon: <CarFront />,
-      blob: "blob4",
-    },
-    {
-      title: "Conatct Operator",
-      text: "To contribute to positive change and achieve our sustainability goals with many extraordinary",
-      icon: <Headset />,
-      blob: "blob2",
-    },
-    {
-      title: "Let's Drive",
-      text: "To contribute to positive change and achieve our sustainability goals with many extraordinary",
-      icon: <ShieldFillCheck />,
-      blob: "blob3",
-      noLine: true,
-    },
-  ];
+ const cards = [
+  {
+    title: "Select Car",
+    text: "Choose from our wide range of comfortable and well-maintained vehicles for your journey.",
+    icon: <CarFront />,
+    blob: "blob4",
+  },
+  {
+    title: "Contact Operator",
+    text: "Get instant assistance from our support team for bookings, updates, and travel queries.",
+    icon: <Headset />,
+    blob: "blob2",
+  },
+  {
+    title: "Let's Drive",
+    text: "Enjoy a safe, smooth, and reliable ride with our professional drivers and quality service.",
+    icon: <ShieldFillCheck />,
+    blob: "blob3",
+    noLine: true,
+  },
+];
 
   return (
     <section className={styles.PlanSection}>

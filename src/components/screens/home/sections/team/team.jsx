@@ -5,25 +5,27 @@ import CustomContainer from '@/components/ui/custom_container/custom_container';
 import SectionHeading from '@/components/common/section_heading/section_heading';
 import { Image } from 'react-bootstrap';
 
+
+
 const teamMembers = [
   {
-    name: 'Sarah Johnson',
-    role: 'Professional Driver',
+    name: 'Ramu Janarthanan',
+    role: 'Vice president',
     image: '/team/driver_1.png',
   },
   {
-    name: 'Jamee Lee',
-    role: 'Professional Driver',
+    name: 'Gowri Shankar',
+    role: 'G M- Operations',
     image: '/team/driver_2.png',
   },
   {
-    name: 'Emily Davis',
-    role: 'Professional Driver',
+    name: 'Vinod Abraham',
+    role: 'CEO',
     image: '/team/driver_3.png',
   },
   {
-    name: 'Navan dravite',
-    role: 'Professional Driver',
+    name: 'Vijayan K Nair',
+    role: 'GM - Sales & Marketing',
     image: '/team/driver_4.png',
   },
 ];
@@ -33,9 +35,9 @@ const TeamSection = () => {
     <section className={styles.TeamSection}>
       <CustomContainer>
         <div className={styles.heading_container}>
-          <SectionHeading title="OUR DRIVERS" head="Meet Our Professional Taxi Drivers" variation={3} />
+          <SectionHeading title="Our Leadership Team" head="Meet the People Driving Our Vision Forward" variation={1} />
           <p className={styles.description} data-aos="fade-up" data-aos-delay="100">
-            Our Taxi Booking Service is designed to make your travel experience fast, safe, and convenient — whether you&apos;re heading to work,.
+            Our leadership team brings together experience, innovation, and dedication to ensure excellence in operations, customer service, and company growth — guiding our organization with professionalism and commitment every step of the way.
           </p>
         </div>
 
@@ -44,7 +46,7 @@ const TeamSection = () => {
             <div className="col-12 col-sm-6 col-lg-3 mb-4" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
               <div className={styles.team_card}>
                 <div className={styles.image_wrapper}>
-                  <Image src={member.image} alt={member.name} fluid />
+                  <Image src={`/images/team/${member.name}.jpeg`} alt={member.name} fluid />
                 </div>
                 <div className={styles.card_content}>
                   <h3 className={FONTS.font2}>{member.name}</h3>

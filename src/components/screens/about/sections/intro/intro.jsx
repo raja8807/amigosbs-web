@@ -30,12 +30,14 @@ const AboutIntro = () => {
             <p className={styles.desc}>
               Each individual has over 15+ years of experience in the industry and understand the need of the clients very well. We started this company to fulfill the need of our clients within their desired budget and each individual brings out the best in each other pushing our company in greater Height.
             </p>
-            
+
             <div className={styles.group_companies}>
               <h3>Group Companies</h3>
               <ul>
                 <li>Amigos Rent A Car Pvt Ltd</li>
                 <li>AMG HOLIDAYS</li>
+                <li>End-to-End Solutions</li>
+
               </ul>
             </div>
           </div>

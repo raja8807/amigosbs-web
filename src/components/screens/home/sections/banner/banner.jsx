@@ -25,6 +25,7 @@ const BannerSection = () => {
         <div className={styles.cont}>
           <CustomContainer>
             <div className={styles.wrap}>
+              <div className=""></div>
               <div className={styles.left}>
                 <div className={styles.detail}>
                   <div
@@ -59,7 +60,7 @@ const BannerSection = () => {
                 </h1>
               </div>
 
-              <div
+              {/* <div
                 className={styles.right}
                 data-aos-delay="1500"
                 data-aos="fade-left"
@@ -69,7 +70,7 @@ const BannerSection = () => {
                   Chennai- India started by a group of friends which in Spanish
                   is called “AMIGOS” thus we named our company as “AMIGOS”....
                 </p>
-              </div>
+              </div> */}
             </div>
           </CustomContainer>
         </div>

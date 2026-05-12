@@ -47,14 +47,14 @@
           }
 
           .bar {
-            > div {
+            >div {
               height: 2px;
               background-color: $color_1;
               width: 50%;
             }
 
             &.barTop {
-              > div {
+              >div {
                 margin: 0 0 0 auto;
               }
             }
@@ -92,10 +92,11 @@
           gap: 16px;
           width: 100%;
           max-width: 400px;
-          padding-bottom: 100px;
+          // padding-bottom: 100px;
 
           .left {
             .detail {
+
               // width: 100%;
               p {
                 font-size: 14px;

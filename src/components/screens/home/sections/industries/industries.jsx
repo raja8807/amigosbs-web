@@ -2,15 +2,17 @@ import React from "react";
 import styles from "./industries.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import FONTS from "@/styles/fonts";
-import { 
-  Cpu, 
-  Gear, 
-  CupHot, 
-  HddNetwork, 
-  Headset, 
-  Building, 
-  Bank, 
-  Hospital 
+import {
+  Cpu,
+  Gear,
+  CupHot,
+  HddNetwork,
+  Headset,
+  Building,
+  Bank,
+  Hospital,
+  HouseDoor,
+  Buildings
 } from "react-bootstrap-icons";
 
 const industriesData = [
@@ -19,8 +21,8 @@ const industriesData = [
   { name: "Hospitality", icon: <Hospital /> },
   { name: "ITES", icon: <HddNetwork /> },
   { name: "BPO", icon: <Headset /> },
-  { name: "Hotels", icon: <CupHot /> },
-  { name: "PSU", icon: <Building /> },
+  { name: "Hotels", icon: <Building /> },
+  { name: "PSU", icon: <Buildings /> },
   { name: "Banking", icon: <Bank /> },
 ];
 
@@ -34,10 +36,10 @@ const IndustriesSection = () => {
         </div>
         <div className={styles.grid}>
           {industriesData.map((item, index) => (
-            <div 
-              className={styles.industry_card} 
-              key={index} 
-              data-aos="zoom-in" 
+            <div
+              className={styles.industry_card}
+              key={index}
+              data-aos="zoom-in"
               data-aos-delay={index * 50}
             >
               <div className={styles.icon_wrapper}>

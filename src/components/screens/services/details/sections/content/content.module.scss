@@ -3,15 +3,7 @@
   background-color: #0b0b0b;
   color: #ffffff;
 
-  .wrapper {
-    display: flex;
-    gap: 80px;
-
-    @media (max-width: 992px) {
-      flex-direction: column;
-      gap: 50px;
-    }
-  }
+  .wrapper {}
 
   .left_side {
     flex: 1.5;
@@ -40,29 +32,13 @@
         }
       }
     }
-
-    .content_image_wrapper {
-      margin-top: 40px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-
-      .content_image {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.5s ease;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-    }
   }
 
   .right_side {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
 
     .features_card {
       background: #121212;
@@ -71,6 +47,9 @@
       border: 1px solid rgba(255, 255, 255, 0.05);
       position: sticky;
       top: 150px;
+      height: fit-content;
+      width: 100%;
+      max-width: 400px;
 
       h3 {
         font-size: 24px;
@@ -104,6 +83,71 @@
             min-width: 18px;
           }
         }
+      }
+    }
+
+    @include respond-below(md) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.content_image_wrapper,
+.carousel_wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 800px;
+
+  .content_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+
+    @include respond-below(md) {
+      // height: 350px;
+    }
+
+    &:hover {
+      // transform: scale(1.05);
+    }
+  }
+
+  :global {
+    .carousel-indicators {
+      bottom: 20px;
+
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 45px;
+      height: 45px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel:hover {
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        opacity: 1;
       }
     }
   }
