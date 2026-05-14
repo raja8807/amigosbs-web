@@ -4,22 +4,14 @@ import Link from "next/link";
 import { ChevronRight, HouseFill } from "react-bootstrap-icons";
 import FONTS from "@/styles/fonts";
 
-const PageBanner = ({ title, image, videoSrc }) => {
+const PageBanner = ({ title, image, videoSrc,bogPos="center" }) => {
     return <section className={styles.PageBanner}
         style={{
-            backgroundImage: videoSrc ? 'none' : `url('${image}')`
+            backgroundImage: videoSrc ? 'none' : `url('${image}')`,
+            backgroundPosition : bogPos
         }}
     >
-        {videoSrc && (
-            <video 
-                src={videoSrc} 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
-                className={styles.bgVideo}
-            />
-        )}
+       
         <div className={styles.overlay} />
 
         <CustomContainer>

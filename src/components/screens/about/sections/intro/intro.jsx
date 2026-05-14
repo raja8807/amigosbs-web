@@ -33,12 +33,12 @@ const AboutIntro = () => {
 
             <div className={styles.group_companies}>
               <h3>Group Companies</h3>
-              <ul>
-                <li>Amigos Rent A Car Pvt Ltd</li>
-                <li>AMG HOLIDAYS</li>
-                <li>End-to-End Solutions</li>
-
-              </ul>
+             <div className={styles.logoGrd}>
+              <Image src="/logo/logo.png" fluid/>
+              <Image src="/logo/logo_rent.png" fluid/>
+              <Image src="/logo/amg_logo.png" fluid/>
+              <Image src="/logo/amigos_events.png" fluid/>
+             </div>
             </div>
           </div>
         </div>

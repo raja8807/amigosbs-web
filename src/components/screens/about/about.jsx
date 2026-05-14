@@ -9,7 +9,7 @@ import TeamSection from "../home/sections/team/team";
 const AboutScreen = () => {
   return (
     <>
-      <PageBanner title="About Us" image="/images/about/banner.png" />
+      <PageBanner title="About Us" image="/images/headers/anout us.png" bogPos="center" />
       <AboutIntro />
       {/* <AboutTeam /> */}
       <TeamSection/>

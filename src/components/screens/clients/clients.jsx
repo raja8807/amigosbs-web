@@ -7,7 +7,7 @@ const ClientsScreen = () => {
     <div>
       <PageBanner
         title="Clients"
-        image="/images/about/banner.png"
+        image="/images/headers/clients.jpeg"
       />
       <IndustriesSection/>
     </div>

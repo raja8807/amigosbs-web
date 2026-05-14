@@ -17,6 +17,38 @@ import Logo from "@/components/common/logo/logo";
 import FONTS from "@/styles/fonts";
 import { CONTACT_DETAILS } from "@/constants/conatct";
 
+
+
+
+// InfiniteHorizontalScroll.jsx
+
+
+
+const items = [
+  "CHENNAI",
+  "BENGALURU",
+  "HYDERABAD",
+  "MUMBAI",
+  "PUNE",
+  "DELHI",
+  "COIMBATORE",
+];
+
+function InfiniteHorizontalScroll() {
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.marquee}>
+        {[...items, ...items,...items, ...items].map((item, index) => (
+          <div key={index} className={styles.item}>
+            <span>{item}</span>
+            <span className={styles.separator}>|</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 const DropDownItem = ({ item, setParentDropdown }) => {
   const [showSubDropDown, setShowSubDropDown] = useState(false);
 
@@ -150,9 +182,7 @@ const Header = ({ noSubheader }) => {
         <div className={styles.topHead}>
           <CustomContainer>
             <div className={styles.topWrap}>
-              <p>
-                <BellFill /> Get 50% Discount for Amigos&apos; New Member
-              </p>
+              <InfiniteHorizontalScroll/>
               <div>
                 <p>
                   <TelephoneFill /> Call us {CONTACT_DETAILS.phone1.text}

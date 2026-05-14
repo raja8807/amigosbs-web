@@ -9,9 +9,7 @@ export const CONTACT_DETAILS = {
     message:
       "Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
   },
-  emails: [
-    "reservation@amigosbs.com",
-  ],
+  emails: ["reservation@amigosbs.com"],
 
   address: [
     "Amigos Business Solutions",
@@ -23,19 +21,15 @@ export const CONTACT_DETAILS = {
 
 export const BRANCHES = [
   {
-    title: "CHENNAI Location",
+    title: "Head Office",
     address: [
       "Amigos Business Solutions",
       "168, Thirugnana Sambandar Street, ",
       "Thiruvalleeswarar Nagar, ",
       "Anna Nagar, Chennai -600040.",
     ],
-    emails: [
-      "reservation@amigosbs.com"
-    ],
-    phones: [
-      "+91 89256 56901"
-    ],
+    emails: ["reservation@amigosbs.com"],
+    phones: ["+91 89256 56901"],
   },
   {
     title: "TRICHY Location",

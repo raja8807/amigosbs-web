@@ -42,7 +42,7 @@ const ContactFormSection = () => {
                 <div className={styles.locationItem}>
                   <GeoAltFill />
                   <div className={styles.infoText}>
-                    <b>Anna Nagar Office</b>
+                    <b>Head Office</b>
                     <p>
                       {CONTACT_DETAILS.address.map((line, index) => (
                         <React.Fragment key={index}>
@@ -56,7 +56,7 @@ const ContactFormSection = () => {
                 <div className={styles.locationItem}>
                   <GeoAltFill />
                   <div className={styles.infoText}>
-                    <b>Nanganallur Office</b>
+                    <b>Nanganallur Branch</b>
                     <p>
                       Amigos Rent A Car <br />
                       #5, BM Complex 45th Street, <br />

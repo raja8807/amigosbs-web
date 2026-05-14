@@ -9,14 +9,13 @@
     padding: 10px 0;
     transform-origin: top;
 
-
     .topWrap {
       color: $color_text_grey;
       font-size: 14px;
       display: flex;
       justify-content: space-between;
 
-      >div {
+      > div {
         display: flex;
         gap: 24px;
       }
@@ -194,5 +193,44 @@
 
   to {
     background-color: $color_b1;
+  }
+}
+
+/* InfiniteHorizontalScroll.module.scss */
+
+.wrapper {
+  width: 300px;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  animation: marquee 36s linear infinite;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.separator {
+  margin-left: 12px;
+  // color: #666;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }

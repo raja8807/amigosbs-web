@@ -11,6 +11,7 @@ const ServiceDetailScreen = ({ data }) => {
       <PageBanner 
         title={data.title} 
         image={data.bannerImage} 
+        bogPos={data.bgPos} 
       />
       <ServiceContent data={data} />
       <SafetySection data={data} />

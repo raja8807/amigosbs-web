@@ -8,6 +8,11 @@ import { Image } from 'react-bootstrap';
 
 
 const teamMembers = [
+   {
+    name: 'Vinod Abraham',
+    role: 'CEO',
+    image: '/team/driver_3.png',
+  },
   {
     name: 'Ramu Janarthanan',
     role: 'Vice president',
@@ -18,11 +23,7 @@ const teamMembers = [
     role: 'G M- Operations',
     image: '/team/driver_2.png',
   },
-  {
-    name: 'Vinod Abraham',
-    role: 'CEO',
-    image: '/team/driver_3.png',
-  },
+ 
   {
     name: 'Vijayan K Nair',
     role: 'GM - Sales & Marketing',
