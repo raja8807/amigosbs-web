@@ -7,7 +7,8 @@ const CareersScreen = () => {
     <>
       <PageBanner
         title="Careers"
-        image="/images/about/banner.png"
+        image="/images/headers/careers.jpeg"
+        bogPos="top"
       />
       <JobListing />
     </>

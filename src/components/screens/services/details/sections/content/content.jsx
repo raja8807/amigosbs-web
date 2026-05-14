@@ -4,7 +4,6 @@ import FONTS from "@/styles/fonts";
 import { Image, Carousel } from "react-bootstrap";
 import { CheckCircleFill } from "react-bootstrap-icons";
 
-
 const ServiceContent = ({ data }) => {
   return (
     <section className={styles.ServiceContent}>
@@ -19,7 +18,6 @@ const ServiceContent = ({ data }) => {
             </div>
           </div>
           <div className={styles.right_side} data-aos="fade-left">
-        
             <div className={styles.features_card}>
               <h3>Key Offerings</h3>
               <ul className={styles.feature_list}>
@@ -33,7 +31,12 @@ const ServiceContent = ({ data }) => {
             </div>
             {data.images && data.images.length > 0 ? (
               <div className={styles.carousel_wrapper}>
-                <Carousel fade indicators={true} controls={true} interval={3000}>
+                <Carousel
+                  fade
+                  indicators={true}
+                  controls={true}
+                  interval={3000}
+                >
                   {data.images.map((img, idx) => (
                     <Carousel.Item key={idx}>
                       <Image

@@ -30,26 +30,23 @@ const BannerSection = () => {
                 <div className={styles.detail}>
                   <div
                     className={`${styles.bar} ${styles.barTop}`}
-                    data-aos-delay="1500"
-                    data-aos="fade-left"
+                  
                   >
                     <div />
                   </div>
-                  <p data-aos-delay="1500" data-aos="fade-in">
+                  <p >
                     Plan your trip now
                   </p>
                   <div
                     className={`${styles.bar} ${styles.barBot}`}
-                    data-aos-delay="1500"
-                    data-aos="fade-right"
+                  
                   >
                     <div />
                   </div>
                 </div>
                 <h1
                   className={FONTS.font2}
-                  data-aos-delay="1500"
-                  data-aos="fade-right"
+          
                 >
                   Save <span>big</span> with
                   <br />

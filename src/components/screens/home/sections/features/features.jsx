@@ -6,21 +6,22 @@ import SectionHeading from '@/components/common/section_heading/section_heading'
 
 const featuresList = [
   {
-    title: 'Expert Technicians',
-    description: 'Our detailers are skilled professionals with years of experience in car care.',
+    title: 'Tailored Travel Packages',
+    description: 'Customized rental and tour plans designed to match your travel needs and budget.',
   },
   {
-    title: 'Tailored Packages',
-    description: 'Detailing options customized to your car\'s condition and your preferences.',
+    title: 'Reliable Transportation',
+    description: 'Well-maintained vehicles and professional drivers for safe, smooth journeys.',
   },
   {
-    title: 'Affordable Pricing',
-    description: 'Competitive rates with no hidden fees — quality service that fits your budget.',
+    title: 'Comfortable & Clean Vehicles',
+    description: 'Travel in comfort with hygienic, spacious, and modern vehicles.',
   },
   {
-    title: 'Aftercare Support',
-    description: 'We provide post-service tips and care advice to keep your car looking sharp.',
+    title: 'Customer-First Service',
+    description: 'Friendly support and hassle-free booking from start to finish.',
   },
+
 ];
 
 const FeaturesSection = () => {
@@ -30,11 +31,11 @@ const FeaturesSection = () => {
         <div className={styles.heading_wrapper}>
           <SectionHeading
             title="TRUSTED & AFFORDABLE"
-            head="Why Choose Amigos?"
+            head="Why Choose Amigos Car Rentals?"
             variation={2}
           />
           <p className={styles.description} data-aos="fade-up" data-aos-delay="100">
-            From deep interior cleaning to long-lasting ceramic coating, we restore and protect your vehicle with precision, care, and a commitment to perfection.
+            Reliable rides, affordable pricing, customized travel solutions, and professional service-all designed to make every journey smooth, safe, and comfortable.
           </p>
         </div>
 

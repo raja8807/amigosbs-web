@@ -4,7 +4,11 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import FONTS from "@/styles/fonts";
 import CustomButton from "@/components/ui/custom_button/custom_button";
 import { CONTACT_DETAILS } from "@/constants/conatct";
-import { EnvelopeAtFill, GeoAltFill, TelephoneFill } from "react-bootstrap-icons";
+import {
+  EnvelopeAtFill,
+  GeoAltFill,
+  TelephoneFill,
+} from "react-bootstrap-icons";
 
 const ContactFormSection = () => {
   return (
@@ -18,7 +22,8 @@ const ContactFormSection = () => {
               </div>
               <h2 className={FONTS.font2}>We are always ready to help you</h2>
               <p>
-                Whether you have a question, a suggestion, or just want to say hello, this is the place to do it.
+                Whether you have a question, a suggestion, or just want to say
+                hello, this is the place to do it.
               </p>
 
               <div className={styles.contactInfo}>
@@ -26,14 +31,18 @@ const ContactFormSection = () => {
                   <TelephoneFill />
                   <div className={styles.infoText}>
                     <b>Call Us</b>
-                    <a href={`tel:${CONTACT_DETAILS.phone1.number}`}>{CONTACT_DETAILS.phone1.text}</a>
+                    <a href={`tel:${CONTACT_DETAILS.phone1.number}`}>
+                      {CONTACT_DETAILS.phone1.text}
+                    </a>
                   </div>
                 </div>
                 <div className={styles.infoItem}>
                   <EnvelopeAtFill />
                   <div className={styles.infoText}>
                     <b>Email Us</b>
-                    <a href={`mailto:${CONTACT_DETAILS.emails[0]}`}>{CONTACT_DETAILS.emails[0]}</a>
+                    <a href={`mailto:${CONTACT_DETAILS.emails[0]}`}>
+                      {CONTACT_DETAILS.emails[0]}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -53,16 +62,32 @@ const ContactFormSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className={styles.locationItem}>
-                  <GeoAltFill />
-                  <div className={styles.infoText}>
-                    <b>Nanganallur Branch</b>
-                    <p>
-                      Amigos Rent A Car <br />
-                      #5, BM Complex 45th Street, <br />
-                      Thilai Ganga Nagar, Nanganallur, <br />
-                      Chennai -600 061.
-                    </p>
+                <div className={styles.locRow}>
+                  <div className={styles.locationItem}>
+                    <GeoAltFill />
+                    <div className={styles.infoText}>
+                      <b>Nanganallur Branch</b>
+                      <p>
+                        Amigos Rent A Car <br />
+                        #5, BM Complex 45th Street, <br />
+                        Thilai Ganga Nagar, Nanganallur, <br />
+                        Chennai -600 061.
+                      </p>
+                    </div>
+                  </div>
+                  <div className={styles.locationItem}>
+                    <GeoAltFill />
+
+                    <div className={styles.infoText}>
+                      <b>Oragadam Branch</b>
+                      <p>
+                        S1, Selvasai Business Center
+                        <br />
+                        Ah Engineering, Industrial Corridor, <br />
+                        Opposite to Daimler, Oragadam, <br />
+                        Kanchipuram-602118.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -81,9 +106,15 @@ const ContactFormSection = () => {
                 <input type="tel" placeholder="Your Phone" required />
               </div>
               <div className={styles.input_group}>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <textarea
+                  placeholder="Your Message"
+                  rows="4"
+                  required
+                ></textarea>
               </div>
-              <CustomButton type="submit" variant={1}>Send Message</CustomButton>
+              <CustomButton type="submit" variant={1}>
+                Send Message
+              </CustomButton>
             </form>
           </div>
         </div>

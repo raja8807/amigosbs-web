@@ -3,7 +3,8 @@
   background-color: #0b0b0b;
   color: #ffffff;
 
-  .wrapper {}
+  .wrapper {
+  }
 
   .left_side {
     flex: 1.5;
@@ -144,7 +145,6 @@
     }
 
     .carousel:hover {
-
       .carousel-control-prev,
       .carousel-control-next {
         opacity: 1;

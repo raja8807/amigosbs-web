@@ -2,6 +2,7 @@ export const SERVICES_DATA = {
   "car-rental": {
     title: "Car Rental",
     bannerImage: "/images/headers/car rental.png",
+    contentImage: "/images/services/car rental.png",
     description:
       "Amigos Rent A Car is an online and offline cab booking aggregator, providing customers with reliable and premium Intercity and Local car rental services.",
     fullContent: [
@@ -17,7 +18,7 @@ export const SERVICES_DATA = {
   },
   "employee-transportation": {
     title: "Employee Transportation",
-    bannerImage: "/images/headers/employee transportation-1.png",
+    bannerImage: "/images/headers/employee transportation.png",
     contentImage: "/images/employee transportation.webp",
     images: [
       "/images/Employee Transportation/1.jpg",
@@ -84,7 +85,9 @@ export const SERVICES_DATA = {
   },
   "event-management": {
     title: "Event Management",
-    bannerImage: "/images/headers/event managemnt.png",
+    bannerImage: "/images/headers/event management.png",
+    bgPos: "top",
+    contentImage: "/images/services/event managemnt.png",
     description:
       "YOUR BUSINESS IS MAKING MEMORIES. We are a one-stop solution for all your event needs, from intimate socials to big corporate days.",
     fullContent: [
@@ -101,7 +104,8 @@ export const SERVICES_DATA = {
   },
   "inbound-and-outbound-tours": {
     title: "Inbound & Outbound Tours",
-    bannerImage: "/images/headers/inbound and outbound-1.png",
+    bannerImage: "/images/headers/inbound and outbound.png",
+    contentImage: "/images/services/inbound outbound tours.png",
     description:
       "A comprehensive range of travel experiences across India and the globe, tailored to your sense of adventure and leisure.",
     fullContent: [
@@ -119,7 +123,9 @@ export const SERVICES_DATA = {
   },
   "wedding-planner": {
     title: "Wedding Planner",
-    bannerImage: "/images/headers/wedding planers.png",
+    bannerImage: "/images/headers/wedding planner.png",
+    contentImage: "/images/services/wedding planers.png",
+
     bgPos: "top",
     description:
       "From your thank you gifts to your honeymoon package, we are here to make your dream wedding come true.",

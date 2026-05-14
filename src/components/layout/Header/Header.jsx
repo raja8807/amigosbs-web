@@ -38,7 +38,7 @@ function InfiniteHorizontalScroll() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.marquee}>
-        {[...items, ...items,...items, ...items].map((item, index) => (
+        {[...items, ...items,...items, ...items,...items, ...items,,...items, ...items].map((item, index) => (
           <div key={index} className={styles.item}>
             <span>{item}</span>
             <span className={styles.separator}>|</span>
@@ -183,7 +183,7 @@ const Header = ({ noSubheader }) => {
           <CustomContainer>
             <div className={styles.topWrap}>
               <InfiniteHorizontalScroll/>
-              <div>
+              <div className={styles.topRight}>
                 <p>
                   <TelephoneFill /> Call us {CONTACT_DETAILS.phone1.text}
                 </p>
