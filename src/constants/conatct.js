@@ -9,7 +9,7 @@ export const CONTACT_DETAILS = {
     message:
       "Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
   },
-  emails: ["reservation@amigosbs.com"],
+  emails: ["reservations@amigosbs.com"],
 
   address: [
     "Amigos Business Solutions",
@@ -28,7 +28,7 @@ export const BRANCHES = [
       "Thiruvalleeswarar Nagar, ",
       "Anna Nagar, Chennai -600040.",
     ],
-    emails: ["reservation@amigosbs.com"],
+    emails: ["reservations@amigosbs.com"],
     phones: ["+91 89256 56901"],
   },
   {
@@ -53,7 +53,7 @@ export const BRANCHES = [
       "Thilai Ganga Nagar, Nanganallur, ",
       "Chennai -600 061.",
     ],
-    emails: ["reservation@amigosbs.com"],
+    emails: ["reservations@amigosbs.com"],
     phones: ["+91 89256 56901"],
   },
 ];
