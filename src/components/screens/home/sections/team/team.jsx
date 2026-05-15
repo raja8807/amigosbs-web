@@ -19,7 +19,7 @@ const teamMembers = [
     image: '/team/driver_1.png',
   },
   {
-    name: 'Gowri Shankar',
+    name: 'Gowri Shankar M',
     role: 'G M- Operations',
     image: '/team/driver_2.png',
   },
