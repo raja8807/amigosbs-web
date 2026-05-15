@@ -111,11 +111,12 @@ const NavItem = ({ item }) => {
           setShowDropDown(false);
         }}
       >
-        <Link href={item.href || "#"}>
+        <p>
           {item.title}
           &nbsp;
+          
           <ChevronDown />
-        </Link>
+        </p>
         {showDropDown && (
           <div className={styles.dropdownWrap}>
             <div className={`${styles.dropdown}`}>
