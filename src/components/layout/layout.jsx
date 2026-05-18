@@ -30,11 +30,11 @@ const WhatsappChatWidget = () => {
   useEffect(() => {
     const showTimer = setTimeout(() => {
       setShowTooltip(true);
-      
+
       const hideTimer = setTimeout(() => {
         setShowTooltip(false);
       }, 5000);
-      
+
     }, 10000);
 
     return () => {
@@ -85,7 +85,7 @@ const WhatsappChatWidget = () => {
       ) : (
         <div className={styles.fabContainer}>
           <div className={`${styles.tooltipBox} ${showTooltip ? styles.show : ""}`}>
-            <p className={styles.tooltipTitle}>We're Online!</p>
+            <p className={styles.tooltipTitle}>We&apos;re Online!</p>
             <p className={styles.tooltipText}>How may I help you today?</p>
           </div>
           <button className={styles.fabBtn} onClick={() => { setIsOpen(true); setShowTooltip(false); }}>
