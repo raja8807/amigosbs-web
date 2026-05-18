@@ -3,7 +3,6 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./download_app.module.scss";
 import FONTS from "@/styles/fonts";
 import CustomButton from "@/components/ui/custom_button/custom_button";
-import Link from "next/link";
 
 const DownloadAppSection = () => {
   return (
@@ -18,21 +17,14 @@ const DownloadAppSection = () => {
               Thrown shy denote ten ladies though ask saw. Or by to he going think order event music.
               Incommode so intention defective at convinced. Led income months itself and houses you.
             </p>
-            <div className={styles.buttonGroup} data-aos="fade-up" data-aos-delay="200">
-              <a href="#" className={styles.appBtn}>
-                <Image src="/assets/google-app-download.svg" alt="Google Play" />
-              </a>
-              <a href="#" className={styles.appBtn}>
-                <Image src="/assets/ios-app-btn.svg" alt="App Store" />
+            <div className={styles.contactInfo} data-aos="fade-up" data-aos-delay="200">
+              <p style={{ fontSize: '18px', color: '#ffffff', marginTop: '30px', marginBottom: '20px', lineHeight: '1.6' }}>
+                To know more about the application please do reach out at:
+              </p>
+              <a href="mailto:sales@amigosbs.com" style={{ textDecoration: 'none', display: 'inline-block', position: 'relative', zIndex: 10 }}>
+                <CustomButton variant={3}>sales@amigosbs.com</CustomButton>
               </a>
             </div>
-              <Link href={'/brochure'} target="_blank" className={styles.brochure}
-              data-aos="fade-up"
-              data-aos-delay="300"
-              >
-                <CustomButton variant={3}                
-                >View Brochure</CustomButton>
-              </Link>
           </Col>
           <Col lg={5} md={12} className={styles.imageColumn}>
             <div className={styles.imageWrapper}>

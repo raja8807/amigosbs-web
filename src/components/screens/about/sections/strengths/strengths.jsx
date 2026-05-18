@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./strengths.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import FONTS from "@/styles/fonts";
-import { AwardFill, GearFill, PeopleFill, BriefcaseFill, GeoAltFill } from "react-bootstrap-icons";
+import { AwardFill, GearFill, PeopleFill, BriefcaseFill, GeoAltFill, CpuFill } from "react-bootstrap-icons";
 
 const strengthsData = [
   {
@@ -30,6 +30,11 @@ const strengthsData = [
     desc: "Continuous adaptation to market trends and client feedback drives the development of tailored and effective services.",
     icon: <GearFill />,
   },
+ {
+  title: "Innovation",
+  desc: "Integrating cutting-edge technology to provide end-to-end services that guarantee precision, reliability, and clear data insights.",
+  icon: <CpuFill />,
+},
 ];
 
 const AboutStrengths = () => {

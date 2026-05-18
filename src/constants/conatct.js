@@ -6,8 +6,7 @@ export const CONTACT_DETAILS = {
   whatsapp1: {
     number: "918925656901",
     text: "+91 89256 56901",
-    message:
-      "Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
+
   },
   emails: ["reservations@amigosbs.com"],
 

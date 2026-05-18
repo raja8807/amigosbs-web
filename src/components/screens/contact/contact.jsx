@@ -8,7 +8,7 @@ const ContactScreen = () => {
     <>
       <PageBanner
         title="Contact Us"
-        image="/images/headers/contact us.png"
+        image="/images/headers/contact_us_header.jpeg"
       />
       <ContactFormSection />
       <SlideshowSection />

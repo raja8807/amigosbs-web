@@ -19,15 +19,81 @@ const EnquireButton = ({ setShow }) => {
     </div>
   );
 };
-const WhatsappButton = ({ setShow }) => {
+
+import { ChatText, X, SendFill } from "react-bootstrap-icons";
+
+const WhatsappChatWidget = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [message, setMessage] = useState("");
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  useEffect(() => {
+    const showTimer = setTimeout(() => {
+      setShowTooltip(true);
+      
+      const hideTimer = setTimeout(() => {
+        setShowTooltip(false);
+      }, 5000);
+      
+    }, 10000);
+
+    return () => {
+      clearTimeout(showTimer);
+    };
+  }, []);
+
+  const handleSend = () => {
+    if (message.trim()) {
+      const url = `https://wa.me/${CONTACT_DETAILS.whatsapp1.number}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+      setIsOpen(false);
+      setMessage("");
+    }
+  };
+
   return (
-    <Link
-      href={`https://wa.me/${CONTACT_DETAILS.whatsapp1.number}?text=${CONTACT_DETAILS.whatsapp1.message}`}
-      target="_blank"
-      className={styles.WhatsappButton}
-    >
-      <Image src="/assets/whatsapp-icon.png" alt="whatsapp" width={50} />
-    </Link>
+    <div className={styles.whatsappChatWidget}>
+      {isOpen ? (
+        <div className={styles.chatBox}>
+          <div className={styles.chatHeader}>
+            <div className={styles.headerInfo}>
+              <h4>Amigos Support</h4>
+              <p>We typically reply in a few minutes.</p>
+            </div>
+            <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
+              <X />
+            </button>
+          </div>
+          <div className={styles.chatBody}>
+            <div className={styles.chatBubble}>
+              Hi there! 👋<br />How can we help you today?
+            </div>
+          </div>
+          <div className={styles.chatFooter}>
+            <input
+              type="text"
+              placeholder="Enter your message..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleSend()}
+            />
+            <button className={styles.sendBtn} onClick={handleSend} disabled={!message.trim()}>
+              <SendFill />
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className={styles.fabContainer}>
+          <div className={`${styles.tooltipBox} ${showTooltip ? styles.show : ""}`}>
+            <p className={styles.tooltipTitle}>We're Online!</p>
+            <p className={styles.tooltipText}>How may I help you today?</p>
+          </div>
+          <button className={styles.fabBtn} onClick={() => { setIsOpen(true); setShowTooltip(false); }}>
+            <ChatText />
+          </button>
+        </div>
+      )}
+    </div>
   );
 };
 
@@ -50,15 +116,15 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const noSubheader = router.pathname === "/brochure"
 
- 
-  
+
+
 
   return (
     <div className={styles.Layout}>
-      <Header  noSubheader={noSubheader}/>
+      <Header noSubheader={noSubheader} />
       {children}
-      {/* <EnquireButton setShow={setShow} />
-      <WhatsappButton /> */}
+      {/* <EnquireButton setShow={setShow} /> */}
+      <WhatsappChatWidget />
 
       <Footer />
       {/* <EnquiryModal show={show} setShow={setShow} /> */}

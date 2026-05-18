@@ -3,8 +3,7 @@
   background-color: #0b0b0b;
   color: #ffffff;
 
-  .wrapper {
-  }
+  .wrapper {}
 
   .left_side {
     flex: 1.5;
@@ -30,6 +29,92 @@
 
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+    }
+
+    .services_list {
+      margin-top: 50px;
+
+      h3 {
+        font-size: 28px;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 50px;
+          height: 3px;
+          background: #e9021e;
+          border-radius: 2px;
+        }
+      }
+
+      .list_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        @include respond-below(md) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+
+
+        .service_card {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 12px;
+          padding: 16px 20px;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border-color: rgba(233, 2, 30, 0.4);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(233, 2, 30, 0.1);
+
+            .icon_box {
+              background: #e9021e;
+              color: #ffffff;
+              transform: scale(1.1);
+            }
+
+            .service_name {
+              color: #ffffff;
+            }
+          }
+
+          .icon_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: rgba(233, 2, 30, 0.1);
+            color: #e9021e;
+            font-size: 18px;
+            transition: all 0.3s ease;
+          }
+
+          .service_name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #cecece;
+            transition: color 0.3s ease;
+            line-height: 1.4;
+          }
         }
       }
     }
@@ -145,9 +230,100 @@
     }
 
     .carousel:hover {
+
       .carousel-control-prev,
       .carousel-control-next {
         opacity: 1;
+      }
+    }
+  }
+}
+
+.process_section {
+  margin-top: 80px;
+
+  .process_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .process_card {
+      background: #121212;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        border-color: rgba(233, 2, 30, 0.3);
+      }
+
+      .category_title {
+        font-size: 28px;
+        color: #e9021e;
+        font-weight: 700;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .category_items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          cursor: default;
+
+          .item_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            min-width: 45px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: #e9021e;
+            font-size: 18px;
+            transition: all 0.3s ease;
+          }
+
+          .item_text {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 500;
+            transition: color 0.3s ease;
+          }
+
+          &:hover {
+            .item_icon {
+              background: #e9021e;
+              color: #ffffff;
+              border-color: #e9021e;
+            }
+
+            .item_text {
+              color: #e9021e;
+            }
+          }
+        }
       }
     }
   }

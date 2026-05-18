@@ -4,6 +4,7 @@ import SectionHeading from "@/components/common/section_heading/section_heading"
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Carousel, Image } from "react-bootstrap";
 import CustomButton from "@/components/ui/custom_button/custom_button";
+import { useRouter } from "next/router";
 
 const CarsSection = () => {
   const categories = [
@@ -141,19 +142,21 @@ const CarsSection = () => {
   const [viewedCar, setViewedCar] = useState(null);
 
   useEffect(() => {
-  const allImages = [];
+    const allImages = [];
 
-  categories.forEach((category) => {
-    category.cars.forEach((car) => {
-      allImages.push(`/images/cars/${car.image}`);
+    categories.forEach((category) => {
+      category.cars.forEach((car) => {
+        allImages.push(`/images/cars/${car.image}`);
+      });
     });
-  });
 
-  allImages.forEach((src) => {
-    const img = new window.Image();
-    img.src = src;
-  });
-}, []);
+    allImages.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
+
+  const router = useRouter()
 
   return (
     <section className={styles.CarsSection}>
@@ -196,10 +199,10 @@ const CarsSection = () => {
               const hasType = category.cars.some((c) => c.type);
               const uniqueTypes = hasType
                 ? Array.from(
-                    new Set(
-                      category.cars.filter((c) => c.type).map((c) => c.type),
-                    ),
-                  )
+                  new Set(
+                    category.cars.filter((c) => c.type).map((c) => c.type),
+                  ),
+                )
                 : [];
 
               let currentType = null;
@@ -227,7 +230,7 @@ const CarsSection = () => {
                         alt={viewedCar || category.name}
                         fluid
                         key={viewedCar}
-                 
+
                         onError={(e) => {
                           // Fallback to a default image if category image doesn't exist
                           e.target.src = "/images/cars/Standard.png";
@@ -271,7 +274,9 @@ const CarsSection = () => {
                           );
                         })}
 
-                        <CustomButton variant={1}>Book Now</CustomButton>
+                        <CustomButton variant={1}
+                          onClick={() => router.push('/contact')}
+                        >Book Now</CustomButton>
                       </div>
                     </div>
                   </div>

@@ -18,7 +18,7 @@ const HomeScreen = () => {
       <IndustriesSection />
       <LocationsSection />
       <TeamSection />
-      <DownloadAppSection />
+
     </>
   );
 };
