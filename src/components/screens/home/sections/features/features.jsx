@@ -31,7 +31,7 @@ const FeaturesSection = () => {
         <div className={styles.heading_wrapper}>
           <SectionHeading
             title="TRUSTED & AFFORDABLE"
-            head="Why Choose Amigos Car Rentals?"
+            head="AMIGOS RENT A CAR"
             variation={2}
           />
           <p className={styles.description} data-aos="fade-up" data-aos-delay="100">

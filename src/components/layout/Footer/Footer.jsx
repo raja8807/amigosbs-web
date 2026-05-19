@@ -8,6 +8,7 @@ import {
   Linkedin,
   Youtube,
   CaretRightFill,
+  Instagram,
 } from "react-bootstrap-icons";
 import { PAGES } from "@/constants/constants";
 import { CONTACT_DETAILS } from "@/constants/conatct";
@@ -62,8 +63,8 @@ const Footer = () => {
                   <a href="#">
                     <Facebook />
                   </a>
-                  <a href="#">
-                    <Linkedin />
+                  <a href="https://www.instagram.com/amigosbs2019?igsh=Y3dheDFnenk5dXdq">
+                    <Instagram />
                   </a>
                   <a href="#">
                     <XIcon />
@@ -81,7 +82,7 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className={styles.linkList}>
-              {PAGES.map((page) => {
+              {PAGES.filter((page) => !page.hideInFooter).map((page) => {
                 return (
                   <li key={page.title}>
                     <Link href={page.href || "#"}>

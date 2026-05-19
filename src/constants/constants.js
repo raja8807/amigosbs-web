@@ -23,6 +23,7 @@ export const PAGES = [
   {
     title: "Services",
     href: "/services",
+    hideInFooter: true,
 
     dropdown: [
       {

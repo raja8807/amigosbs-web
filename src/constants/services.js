@@ -4,16 +4,18 @@ export const SERVICES_DATA = {
     bannerImage: "/images/headers/car rental.png",
     contentImage: "/images/services/car rental.png",
     description:
-      "Amigos Rent A Car is an online and offline cab booking aggregator, providing customers with reliable and premium Intercity and Local car rental services.",
+      "Drive Comfort, Travel Smart with Amigos Rent A Car",
     fullContent: [
-      "Over the last decade, we are uniquely placed as the largest chauffeur-driven car rental company in India in terms of geographical reach.",
-      "Chennai is a major metro city and the cultural capital of South India. Experience the city's rich heritage, like the Ashtalakshmi and Marundeeswarar temples, in the comfort of a professionally driven vehicle.",
-      "We offer best-in-class rental rates in Chennai and across India, tailored for both personal and corporate needs.",
+      "Welcome to Amigos Rent A Car, your trusted partner for reliable, comfortable, and premium travel experiences across India. As a leading online and offline cab booking aggregator, we specialize in chauffeur-driven intercity and local car rental services designed to meet both personal and corporate travel needs.",
+      "With over a decade of industry expertise, we have built a strong reputation for delivering safe, seamless, and professional transportation solutions, with an extensive network across the country. Our commitment to quality service, punctuality, and customer satisfaction makes us a preferred choice for travelers nationwide.",
+      "Explore the vibrant charm of Chennai, the cultural capital of South India, in the comfort of a professionally driven vehicle. From iconic landmarks like Ashtalakshmi Temple and Marundeeswarar Temple, to business hubs and coastal destinations, we ensure every journey is smooth, convenient, and memorable.",
+      "At Amigos Rent A Car, we combine affordable pricing with premium service standards, offering best-in-class rental solutions tailored to your travel requirements. Whether it’s a local city ride, airport transfer, corporate travel, or an outstation trip, we are dedicated to making every journey comfortable, dependable, and hassle-free.",
     ],
     features: [
       "Employee Transportation",
-      "Guest Transportation / Rent A Car",
-      "Corporate Conference / Events",
+      "Executive Car Rental",
+      "Corporate Conference",
+      "Marriage Events",
     ],
   },
   "employee-transportation": {
@@ -27,11 +29,12 @@ export const SERVICES_DATA = {
       "/images/Employee Transportation/4.jpg",
     ],
     description:
-      "We provide end-to-end transport solutions based on client needs, focusing on efficiency and cost control.",
+      "Smart Transport Solutions for a Smarter Workforce",
     fullContent: [
-      "Our team works diligently to ensure maximum occupancy and streamlined logistics for employee commutes.",
-      "We understand the critical nature of timely and safe transportation for your workforce and implement rigorous safety standards.",
-      "Amigos Business Solutions handles all operational complexities, allowing you to focus on your core business.",
+      "We deliver end-to-end transport solutions tailored to your business needs, with a strong focus on efficiency, reliability, and cost optimization.",
+      "Our team ensures seamless operations with optimized routing and maximum vehicle utilization for smooth employee commutes.",
+      "We prioritize the safety, punctuality, and comfort of your workforce by maintaining strict safety standards and consistent service quality.",
+      "At Amigos Business Solutions, we take care of all operational complexities, so you can focus on growing your core business with confidence.",
     ],
     features: [
       "24/7 Operational Support",
@@ -89,11 +92,13 @@ export const SERVICES_DATA = {
     bgPos: "top",
     contentImage: "/images/services/event managemnt.png",
     description:
-      "YOUR BUSINESS IS MAKING MEMORIES. We are a one-stop solution for all your event needs, from intimate socials to big corporate days.",
+      "Turning Moments into Memories That Last Forever",
     fullContent: [
-      "We handle corporate events such as Annual Days, Sports Days, and Factory Days with meticulous planning and execution.",
-      "Our social event services cover everything from birthdays to anniversaries, ensuring a memorable experience for all guests.",
-      "We also provide brand activation and exhibition services, planning every detail to fit your desired budget.",
+      "Your business is all about creating memories that last a lifetime.",
+      "We are your one-stop destination for all event needs, from intimate gatherings to large-scale corporate celebrations.",
+      "We specialize in planning and executing corporate events such as Annual Days, Sports Days, and Factory Days with precision, creativity, and attention to detail. Every event is designed to engage, inspire, and deliver a seamless experience.",
+      "Our social event services bring your special moments to life, from birthdays and anniversaries to private celebrations, ensuring unforgettable experiences for you and your guests.",
+      "We also offer expert brand activation and exhibition solutions, carefully tailored to match your vision and budget, while maximizing impact and visibility.",
     ],
     features: [
       "Corporate Events & Conferences",
@@ -166,12 +171,12 @@ export const SERVICES_DATA = {
     bannerImage: "/images/headers/inbound and outbound.png",
     contentImage: "/images/services/inbound outbound tours.png",
     description:
-      "A comprehensive range of travel experiences across India and the globe, tailored to your sense of adventure and leisure.",
+      "From Local Trails to Global Destinations - We Take You There",
     fullContent: [
-      "Inbound Tours: Amigos offers ground assistance, group/individual travel, and unique South Indian experiences including Culture, Pilgrimage, Adventure, Ayurveda, and Yoga.",
-      "Outbound Tours: Wide range of international tours including MICE, Honeymoon Packages, and Vacations comprising Culture, Education, and Leisure.",
-      "Air Travel Services: We offer Domestic & International Flight bookings, along with expert Passport and Visa application assistance.",
-      "Fleet Excellence: Our extensive fleet includes Toyota Etios, Innova Crysta, Mercedes-Benz, Audi, and Luxury Volvo Coaches.",
+      "We offer seamless travel experiences across India and around the world, designed for adventure, comfort, and leisure.",
+      "From inbound South Indian experiences like culture, pilgrimage, yoga, Ayurveda, and adventure tours to curated outbound international packages including MICE, honeymoons, and leisure vacations - we cover it all.",
+      "Our services also include domestic and international flight bookings, along with expert passport and visa assistance for hassle-free travel.",
+      "Travel in style with our premium fleet, featuring Toyota Etios, Innova Crysta, Mercedes-Benz, Audi, and luxury Volvo coaches.",
     ],
     features: [
       "Inbound South India Tours",
@@ -184,14 +189,14 @@ export const SERVICES_DATA = {
     title: "Wedding Planner",
     bannerImage: "/images/headers/wedding planner.png",
     contentImage: "/images/services/wedding planers.png",
-
     bgPos: "top",
     description:
-      "From your thank you gifts to your honeymoon package, we are here to make your dream wedding come true.",
+      "Turning Your Dream Wedding into a Beautiful Reality",
     fullContent: [
-      "Our team specializes in every detail of wedding planning, ensuring you enjoy your big day hassle-free.",
-      "We cover everything: Engagement parties, Bachelor/Bachelorette parties, Haldi, Sangeeth, and the main Wedding ceremony.",
-      "We ensure every small detail is planned in safe hands, fitting within your desired budget while delivering excellence.",
+      "From thoughtful thank-you gifts to unforgettable honeymoon experiences, we are here to make every moment of your wedding journey truly special.",
+      "Our expert team handles every aspect of wedding planning with creativity, precision, and care, allowing you and your loved ones to enjoy your big day completely stress-free.",
+      "We bring your celebrations to life by managing every event seamlessly, including Engagement ceremonies, Bachelor and Bachelorette parties, Haldi, Sangeeth, Reception, and the grand Wedding ceremony itself. Every celebration is thoughtfully designed to reflect your style, traditions, and vision.",
+      "At every stage, we focus on the smallest details to ensure flawless execution, elegant experiences, and memorable moments for you and your guests. With careful planning and budget-friendly solutions, we deliver weddings that are beautiful, personalized, and truly unforgettable.",
     ],
     features: [
       "Full Wedding Planning",
