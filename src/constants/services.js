@@ -190,6 +190,20 @@ export const SERVICES_DATA = {
     bannerImage: "/images/headers/wedding planner.png",
     contentImage: "/images/services/wedding planers.png",
     bgPos: "top",
+    images: [
+
+      "/images/services/wedding_planner/wedding_planner (2).jpeg",
+      "/images/services/wedding_planner/wedding_planner (3).jpeg",
+      "/images/services/wedding_planner/wedding_planner (4).jpeg",
+      "/images/services/wedding_planner/wedding_planner (5).jpeg",
+      "/images/services/wedding_planner/wedding_planner (6).jpeg",
+      "/images/services/wedding_planner/wedding_planner (7).jpeg",
+      "/images/services/wedding_planner/wedding_planner (8).jpeg",
+      "/images/services/wedding_planner/wedding_planner (9).jpeg",
+      "/images/services/wedding_planner/wedding_planner (10).jpeg",
+      "/images/services/wedding_planner/wedding_planner (11).jpeg",
+      "/images/services/wedding_planner/wedding_planner (12).jpeg",
+    ],
     description:
       "Turning Your Dream Wedding into a Beautiful Reality",
     fullContent: [
