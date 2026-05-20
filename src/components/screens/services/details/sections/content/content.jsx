@@ -63,9 +63,13 @@ const ServiceContent = ({ data }) => {
           <div className={styles.left_side} data-aos="fade-right">
             <h2 className={FONTS.font2}>{data.description}</h2>
             <div className={styles.full_text}>
-              {data.fullContent.map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+              {data.fullContent.map((para, i) => {
+                const trimmed = para.trim();
+                if (trimmed.startsWith("<h") || trimmed.startsWith("<div") || trimmed.startsWith("<ul") || trimmed.startsWith("<ol") || trimmed.startsWith("<p")) {
+                  return <div key={i} dangerouslySetInnerHTML={{ __html: para }} />;
+                }
+                return <p key={i} dangerouslySetInnerHTML={{ __html: para }} />;
+              })}
             </div>
             {data.servicesList && (
               <div className={styles.services_list}>

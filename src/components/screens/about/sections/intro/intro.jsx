@@ -33,19 +33,19 @@ const AboutIntro = () => {
             </div>
 
             <p className={styles.desc}>
-              Welcome to Amigos Business Solutions, a professionally driven business solutions company headquartered in Chennai, built on trust, collaboration, and a passion for delivering reliable solutions that help businesses grow.
+              Welcome to Amigos Business Solutions, a professionally driven company headquartered in Chennai, built on trust, collaboration and a passion for delivering reliable solutions that help businesses grow.
             </p>
             <p className={styles.desc}>
-              The name &ldquo;AMIGOS,&rdquo; derived from the Spanish word for &ldquo;friends,&rdquo; represents the strong foundation on which our company was created. Founded by a group of experienced professionals and friends, Amigos Business Solutions was established with a shared vision to provide dependable, innovative, and cost-effective business solutions tailored to the evolving needs of clients across industries.
+              The name &ldquo;AMIGOS,&rdquo; derived from the Spanish word for &ldquo;friends,&rdquo; represents the strong foundation on which our company was created. Founded by a group of experienced professionals and friends, Amigos Business Solutions was established with a shared vision to provide dependable, innovative and cost effective business solutions tailored to the evolving needs of clients across industries.
             </p>
             <p className={styles.desc}>
-              With each founding member bringing over 15 years of industry experience, we possess deep knowledge and practical understanding of client expectations, operational challenges, and modern business requirements. Our expertise enables us to deliver customized solutions that align perfectly with our clients&rsquo; goals, timelines, and budgets while maintaining the highest standards of professionalism and service quality.
+              With each founding member bringing over 20 years of industry experience, we possess deep knowledge and practical understanding of client expectations, operational challenges and modern business requirements. Our expertise enables us to deliver customized solutions that align perfectly with our client&rsquo;s goals, timelines and budgets while maintaining the highest standards of professionalism and service quality.
             </p>
             <p className={styles.desc}>
-              At Amigos Business Solutions, we believe that every successful partnership is built on transparency, commitment, and trust. We work closely with our clients to understand their unique requirements and provide strategic solutions that create long-term value and sustainable growth. Our collaborative approach, combined with innovative thinking and customer-focused service, allows us to consistently exceed expectations.
+              At Amigos Business Solutions, we believe that every successful partnership is built on transparency, commitment and trust. We work closely with our clients to understand their unique requirements and provide strategic solutions that create long term value and sustainable growth. Our collaborative approach, combined with innovative thinking and customer focused services, allows us to consistently exceed the expectations.
             </p>
             <p className={styles.desc}>
-              Driven by teamwork and a commitment to excellence, every individual within our organization contributes their strengths and expertise to push the company towards greater heights. We continuously strive to improve, innovate, and adapt in order to provide seamless and impactful solutions that support the success of our clients.
+              Driven by teamwork and a commitment towards excellence, every individual within our organization contributes their strengths and expertise to push the company towards greater heights. We continuously strive to improve, innovate and adapt in order to provide seamless and impactful solutions that support the success of our clients.
             </p>
 
 

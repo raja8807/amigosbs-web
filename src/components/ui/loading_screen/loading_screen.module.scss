@@ -1,10 +1,13 @@
 .LoadingScreen {
-  background-color: #fbfbfb;
   position: fixed;
-  width: 100dvw;
-  height: 100dvh;
-  top: 0;
-  left: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbfbfb;
+
   @include flexCenter;
+
   z-index: 10000;
+
+  min-height: -webkit-fill-available;
 }
