@@ -92,4 +92,15 @@
       text-transform: uppercase;
     }
   }
+
+  p {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+
+    a {
+      color: $color_1;
+    }
+  }
 }

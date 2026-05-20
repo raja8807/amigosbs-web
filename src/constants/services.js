@@ -3,8 +3,7 @@ export const SERVICES_DATA = {
     title: "Car Rental",
     bannerImage: "/images/headers/car rental.png",
     contentImage: "/images/services/car rental.png",
-    description:
-      "Drive Comfort, Travel Smart with Amigos Rent A Car",
+    description: "Drive Comfort, Travel Smart with Amigos Rent A Car",
     fullContent: [
       "Welcome to Amigos Rent A Car, your trusted partner for reliable, comfortable, and premium travel experiences across India. As a leading online and offline cab booking aggregator, we specialize in chauffeur-driven intercity and local car rental services designed to meet both personal and corporate travel needs.",
       "With over a decade of industry expertise, we have built a strong reputation for delivering safe, seamless, and professional transportation solutions, with an extensive network across the country. Our commitment to quality service, punctuality, and customer satisfaction makes us a preferred choice for travelers nationwide.",
@@ -28,8 +27,7 @@ export const SERVICES_DATA = {
       "/images/Employee Transportation/3.jpg",
       "/images/Employee Transportation/4.jpg",
     ],
-    description:
-      "Smart Transport Solutions for a Smarter Workforce",
+    description: "Smart Transport Solutions for a Smarter Workforce",
     fullContent: [
       "We deliver end-to-end transport solutions tailored to your business needs, with a strong focus on efficiency, reliability, and cost optimization.",
       "Our team ensures seamless operations with optimized routing and maximum vehicle utilization for smooth employee commutes.",
@@ -91,8 +89,7 @@ export const SERVICES_DATA = {
     bannerImage: "/images/headers/event management.png",
     bgPos: "top",
     contentImage: "/images/services/event managemnt.png",
-    description:
-      "Turning Moments into Memories That Last Forever",
+    description: "Turning Moments into Memories That Last Forever",
     fullContent: [
       "Your business is all about creating memories that last a lifetime.",
       "We are your one-stop destination for all event needs, from intimate gatherings to large-scale corporate celebrations.",
@@ -157,6 +154,7 @@ export const SERVICES_DATA = {
       },
     ],
     images: [
+      "/images/services/event_management/event_management.jpeg",
       "/images/services/event_management/event_management (1).jpeg",
       "/images/services/event_management/event_management (2).jpeg",
       "/images/services/event_management/event_management (3).jpeg",
@@ -164,14 +162,19 @@ export const SERVICES_DATA = {
       "/images/services/event_management/event_management (5).jpeg",
       "/images/services/event_management/event_management (6).jpeg",
       "/images/services/event_management/event_management (7).jpeg",
+      "/images/services/event_management/event_management (8).jpeg",
+      "/images/services/event_management/event_management (9).jpeg",
+      "/images/services/event_management/event_management (10).jpeg",
+      "/images/services/event_management/event_management (11).jpeg",
+      "/images/services/event_management/event_management (12).jpeg",
+      "/images/services/event_management/event_management (13).jpeg",
     ],
   },
   "inbound-and-outbound-tours": {
     title: "Inbound & Outbound Tours",
     bannerImage: "/images/headers/inbound and outbound.png",
     contentImage: "/images/services/inbound outbound tours.png",
-    description:
-      "From Local Trails to Global Destinations - We Take You There",
+    description: "From Local Trails to Global Destinations - We Take You There",
     fullContent: [
       "We offer seamless travel experiences across India and around the world, designed for adventure, comfort, and leisure.",
       "From inbound South Indian experiences like culture, pilgrimage, yoga, Ayurveda, and adventure tours to curated outbound international packages including MICE, honeymoons, and leisure vacations - we cover it all.",
@@ -184,6 +187,13 @@ export const SERVICES_DATA = {
       "Flight & Visa Services",
       "Luxury Coach Rentals",
     ],
+
+    images: [
+      "/images/services/inbound_oubound_tours/inbound_oubound_tours (1).jpeg",
+      "/images/services/inbound_oubound_tours/inbound_oubound_tours (2).jpeg",
+      "/images/services/inbound_oubound_tours/inbound_oubound_tours (3).jpeg",
+      "/images/services/inbound_oubound_tours/inbound_oubound_tours (4).jpeg",
+    ],
   },
   "wedding-planner": {
     title: "Wedding Planner",
@@ -191,7 +201,6 @@ export const SERVICES_DATA = {
     contentImage: "/images/services/wedding planers.png",
     bgPos: "top",
     images: [
-
       "/images/services/wedding_planner/wedding_planner (2).jpeg",
       "/images/services/wedding_planner/wedding_planner (3).jpeg",
       "/images/services/wedding_planner/wedding_planner (4).jpeg",
@@ -204,8 +213,7 @@ export const SERVICES_DATA = {
       "/images/services/wedding_planner/wedding_planner (11).jpeg",
       "/images/services/wedding_planner/wedding_planner (12).jpeg",
     ],
-    description:
-      "Turning Your Dream Wedding into a Beautiful Reality",
+    description: "Turning Your Dream Wedding into a Beautiful Reality",
     fullContent: [
       "From thoughtful thank-you gifts to unforgettable honeymoon experiences, we are here to make every moment of your wedding journey truly special.",
       "Our expert team handles every aspect of wedding planning with creativity, precision, and care, allowing you and your loved ones to enjoy your big day completely stress-free.",

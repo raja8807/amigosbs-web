@@ -14,6 +14,7 @@ import {
   HouseDoor,
   Buildings
 } from "react-bootstrap-icons";
+import Link from "next/link";
 
 const industriesData = [
   { name: "Technology", icon: <Cpu /> },
@@ -49,6 +50,9 @@ const IndustriesSection = () => {
             </div>
           ))}
         </div>
+        <p>To know more about our services please do reach at{" "}
+          <Link href={'mailto:sales@amigosbs.com'}>sales@amigosbs.com</Link>
+        </p>
       </CustomContainer>
     </section>
   );
