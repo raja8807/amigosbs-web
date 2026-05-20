@@ -16,7 +16,7 @@ const strengthsData = [
     icon: <BriefcaseFill />,
   },
   {
-    title: "Customer-Centric Approach",
+    title: "Customer Centric Approach",
     desc: "A strong focus on understanding and fulfilling client requirements ensures high satisfaction and repeat business.",
     icon: <AwardFill />,
   },

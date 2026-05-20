@@ -198,7 +198,7 @@ const Header = ({ noSubheader }) => {
       )}
       <CustomContainer>
         <div className={styles.wrap}>
-          <Logo width={isScrolled ? 110 : 110} />
+          <Logo  />
           <div className={styles.left}>
             <nav className={styles.navLg}>
               <ul>

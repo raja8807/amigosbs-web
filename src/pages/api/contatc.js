@@ -1,8 +1,8 @@
-import nodemailer from "nodemailer";
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Method not allowed' });
   }
 
   try {
@@ -10,24 +10,23 @@ export default async function handler(req, res) {
 
     // Validate required fields
     if (!name || !email || !message) {
-      return res.status(400).json({
-        message:
-          "Missing required fields: name, email, and message are required",
+      return res.status(400).json({ 
+        message: 'Missing required fields: name, email, and message are required' 
       });
     }
 
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return res.status(400).json({
-        message: "Invalid email format",
+      return res.status(400).json({ 
+        message: 'Invalid email format' 
       });
     }
 
-    // Configure the transporter usingBrevo SMTP credentials from .env
+    // Configure the transporter using Brevo SMTP credentials from .env
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_Server || "smtp-relay.brevo.com",
-      port: parseInt(process.env.Port || "587", 10),
+      host: process.env.SMTP_Server || 'smtp-relay.brevo.com',
+      port: parseInt(process.env.Port || '587', 10),
       secure: false, // Port 587 uses STARTTLS
       auth: {
         user: process.env.Login,
@@ -37,8 +36,8 @@ export default async function handler(req, res) {
 
     // Email options
     const mailOptions = {
-      from: `tanya@amigosbs.com`,
-      to: "vijayan@amigosbs.com",
+      from: `"Amigos Contact Form" <${process.env.Login || 'reservations@amigosbs.com'}>`,
+      to: 'reservations@amigosbs.com',
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
@@ -55,7 +54,7 @@ export default async function handler(req, res) {
             </tr>
             <tr>
               <td style="padding: 8px 0; font-weight: bold;">Phone:</td>
-              <td style="padding: 8px 0;">${phone || "N/A"}</td>
+              <td style="padding: 8px 0;">${phone || 'N/A'}</td>
             </tr>
             <tr>
               <td style="padding: 8px 0; font-weight: bold; vertical-align: top;">Message:</td>
@@ -71,19 +70,19 @@ export default async function handler(req, res) {
     // Send the email
     await transporter.sendMail(mailOptions);
 
-    return res.status(200).json({
-      message: "Message sent successfully. We'll get back to you soon!",
+    return res.status(200).json({ 
+      message: 'Message sent successfully. We\'ll get back to you soon!',
       data: {
         name,
         email,
-        submittedAt: new Date().toISOString(),
-      },
+        submittedAt: new Date().toISOString()
+      }
     });
+
   } catch (error) {
-    console.error("Contact API Error:", error);
-    return res.status(500).json({
-      message:
-        "Internal server error. Failed to send message. Please try again later.",
+    console.error('Contact API Error:', error);
+    return res.status(500).json({ 
+      message: 'Internal server error. Failed to send message. Please try again later.' 
     });
   }
 }

@@ -6,9 +6,12 @@ import { Image } from "react-bootstrap";
 import { CheckCircleFill } from "react-bootstrap-icons";
 
 const AboutIntro = () => {
+
+                                                             
+
   const companies = [
-    "Amigos",
-    "Amigos Rent-A-Car",
+    "Amigos Business Solutions",
+    "Amigos Rent A Car Private Limited",
     "AMG Holidays",
     "Amigos Events",
   ];

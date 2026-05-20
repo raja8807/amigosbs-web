@@ -28,7 +28,32 @@ const SlideshowSection = () => {
       src: "/images/contact/contact (5).jpeg",
       title: "Dedicated Support",
       description: "Your success is our priority, every step of the way."
-    }
+    },
+    {
+      src: "/images/contact/contact (6).jpeg",
+      title: "Dedicated Support",
+      description: "Your success is our priority, every step of the way."
+    },
+    {
+      src: "/images/contact/contact (7).jpeg",
+      title: "Dedicated Support",
+      description: "Your success is our priority, every step of the way."
+    },
+    {
+      src: "/images/contact/contact (8).jpeg",
+      title: "Dedicated Support",
+      description: "Your success is our priority, every step of the way."
+    },
+    {
+      src: "/images/contact/contact (9).jpeg",
+      title: "Dedicated Support",
+      description: "Your success is our priority, every step of the way."
+    },
+    {
+      src: "/images/contact/contact (10).jpeg",
+      title: "Dedicated Support",
+      description: "Your success is our priority, every step of the way."
+    },
   ];
 
   return (
